@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(CarPhysics))]
 public class CarController : MonoBehaviour, IInputReceiver
 {
     public float accelerationSpeed = 30.0f;
     public float turnSpeed = 3.5f;
-    public float driftFactor = 0.80f;
     public float maxSpeed = 10.0f;
     
     private float _accelerationInput = 0.0f;
@@ -32,21 +32,12 @@ public class CarController : MonoBehaviour, IInputReceiver
     void FixedUpdate()
     {
         ApplyEngineForce();
-        KillOrthogonalVelocity();
         ApplySteering();
-    }
-
-    private void KillOrthogonalVelocity()
-    {
-        Vector2 forwardVelocity = transform.up * Vector2.Dot(_rb.linearVelocity, transform.up);
-        Vector2 rightVelocity = transform.right * Vector2.Dot(_rb.linearVelocity, transform.right);
-        
-        _rb.linearVelocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
     private void ApplySteering()
     {
-        _rotationAngle -= _turnInput * turnSpeed;
+        _rotationAngle -= Mathf.Sign(_turnInput) * Mathf.Log(Mathf.Abs(_turnInput) * 5.0f + 1.0f, 2) * turnSpeed;
         _rb.MoveRotation(_rotationAngle);
     }
 
