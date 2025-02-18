@@ -17,8 +17,8 @@ public class InputHandler : MonoBehaviour
     {
         Vector2 inputvector = Vector2.zero;
         
-        inputvector.x = Input.GetAxis("Horizontal");
-        inputvector.y = Input.GetAxis("Vertical");
+        inputvector.x = Input.GetAxisRaw("Horizontal");
+        inputvector.y = Input.GetAxisRaw("Vertical");
         
         CurrentInputReceiver.UpdateInputs(inputvector);
     }
