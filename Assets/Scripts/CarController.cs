@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,13 +19,15 @@ public class CarController : MonoBehaviour, IInputReceiver
     
     private Rigidbody2D _rb;
 
-    private bool _followPath = false;
+    private bool _followPath;
     private RecordEntry[] _path;
-    private uint _pathIndex = 0;
+
+    private Func<uint> PathIndex;
     
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _followPath = false;
     }
 
     public void UpdateInputs(Vector2 inputs)
@@ -42,10 +45,11 @@ public class CarController : MonoBehaviour, IInputReceiver
             DriveByPlayer();
     }
 
-    public void SetPath(RecordEntry[] path)
+    public void SetPath(RecordEntry[] path, Func<uint> pathIndexCallback)
     {
         _path = path;
         _followPath = true;
+        PathIndex = pathIndexCallback;
     }
 
     public bool IsDrivenByPlayer()
@@ -60,9 +64,9 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private void DriveByPath()
     {
-        transform.position = _path[_pathIndex].position;
-        transform.rotation = _path[_pathIndex].rotation;
-        ++_pathIndex;
+        var pathIndex = Math.Min(PathIndex.Invoke(), _path.Length - 1);
+        transform.position = _path[pathIndex].position;
+        transform.rotation = _path[pathIndex].rotation;
     }
 
     private void DriveByPlayer()

@@ -3,13 +3,22 @@ using UnityEngine;
 
 public class WaypointBehaviour : MonoBehaviour
 {
-    public Action onWaypointReached;
-    private void OnCollisionEnter2D(Collision2D other)
+    public Action OnWaypointReached;
+    private bool _deactivated = false;
+
+    private void Awake()
     {
+        _deactivated = false;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (_deactivated) return;
+        
         var carController = other.gameObject.GetComponent<CarController>();
-        if (carController && carController.IsDrivenByPlayer())
-        {
-            onWaypointReached.Invoke();
-        }
+        if (!carController || !carController.IsDrivenByPlayer()) return;
+        
+        OnWaypointReached.Invoke();
+        GetComponent<SpriteRenderer>().color = Color.green;
+        _deactivated = true;
     }
 }

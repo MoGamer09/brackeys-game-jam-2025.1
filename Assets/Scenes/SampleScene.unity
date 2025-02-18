@@ -246,7 +246,7 @@ MonoBehaviour:
   _waypoint: {fileID: 2799081295851913882, guid: 40459c413e8fc517386edde4325326c8, type: 3}
   _carPrefabs:
   - {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
-  _expanse: {x: 2, y: 2}
+  _expanse: {x: 10, y: 10}
 --- !u!4 &1290619536
 Transform:
   m_ObjectHideFlags: 0

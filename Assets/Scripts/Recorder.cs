@@ -14,6 +14,11 @@ public class Recorder : MonoBehaviour
     private bool _recording = false;
     private List<RecordEntry> _records;
 
+    void Awake()
+    {
+        _records = new List<RecordEntry>();
+    }
+    
     private void FixedUpdate()
     {
         if (_recording)

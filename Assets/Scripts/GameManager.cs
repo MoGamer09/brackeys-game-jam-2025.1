@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     private SituationGenerator _situationGenerator;
     private Recorder _recorder;
+
+    private uint _pathIndex;
     
     void Awake()
     {
@@ -18,14 +21,26 @@ public class GameManager : MonoBehaviour
         NextSituation();
     }
 
+    void FixedUpdate()
+    {
+        ++_pathIndex;
+    }
+
     void NextSituation()
     {
-        var nextCar = _situationGenerator.GenerateSituation(NextSituation);
-        var oldPath = _recorder.StopRecording();
         var activeCar = ActiveCar();
-        if (!activeCar) throw new UnityException("No active car");
-        activeCar.SetPath(oldPath.ToArray());
+        var nextCar = _situationGenerator.GenerateSituation(NextSituation);
+        var oldPath = deepCopy(_recorder.StopRecording());
         _recorder.StartRecording(nextCar);
+        _pathIndex = 0;
+        
+        if (!activeCar) return; // first car
+        activeCar.SetPath(oldPath, PathIndex);
+    }
+
+    private uint PathIndex()
+    {
+        return _pathIndex;
     }
 
     [CanBeNull]
@@ -36,5 +51,13 @@ public class GameManager : MonoBehaviour
             if (carController.IsDrivenByPlayer())
                 return carController;
         return null;
+    }
+
+    private static RecordEntry[] deepCopy(List<RecordEntry> records)
+    {
+        var clonedRecords = new RecordEntry[records.Count];
+        for (var i = 0; i < records.Count; i++)
+            clonedRecords[i] = records[i];
+        return clonedRecords;
     }
 }

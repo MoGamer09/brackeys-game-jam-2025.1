@@ -16,10 +16,12 @@ public class SituationGenerator : MonoBehaviour
     public GameObject GenerateSituation(Action onFinished)
     {
         // Random for testing
-        print("test");
-        var waypoint = Instantiate(_waypoint, RandomPosition(), Quaternion.identity);
-        waypoint.GetComponent<WaypointBehaviour>().onWaypointReached = onFinished;
-        var car = Instantiate(_carPrefabs[Random.Range(0, _carPrefabs.Length)], RandomPosition(), Quaternion.identity);
+        var randomPosition = RandomPosition();
+        if (randomPosition.magnitude < _expanse.magnitude * 0.2f)
+            randomPosition *= 3.0f;
+        var waypoint = Instantiate(_waypoint, randomPosition, Quaternion.identity);
+        waypoint.GetComponent<WaypointBehaviour>().OnWaypointReached = onFinished;
+        var car = Instantiate(_carPrefabs[Random.Range(0, _carPrefabs.Length)], -randomPosition, Quaternion.identity);
         return car;
 
     }
