@@ -8,7 +8,8 @@ public class CarController : MonoBehaviour, IInputReceiver
     public float accelerationSpeed = 30.0f;
     public float turnSpeed = 3.5f;
     public float maxSpeed = 10.0f;
-    
+    public float minTurningSpeed = 0.5f;
+
     private float _accelerationInput = 0.0f;
     private float _turnInput = 0.0f;
     
@@ -16,6 +17,10 @@ public class CarController : MonoBehaviour, IInputReceiver
     private float _velocityVsUp = 0.0f;
     
     private Rigidbody2D _rb;
+
+    private bool _followPath = false;
+    private RecordEntry[] _path;
+    private uint _pathIndex = 0;
     
     void Awake()
     {
@@ -31,12 +36,45 @@ public class CarController : MonoBehaviour, IInputReceiver
     // Update is called once per frame
     void FixedUpdate()
     {
-        ApplyEngineForce();
+        if (_followPath)
+            DriveByPath();
+        else
+            DriveByPlayer();
+    }
+
+    public void SetPath(RecordEntry[] path)
+    {
+        _path = path;
+        _followPath = true;
+    }
+
+    public bool IsDrivenByPlayer()
+    {
+        return !_followPath;
+    }
+
+    public bool IsFollowingPath()
+    {
+        return _followPath;
+    }
+
+    private void DriveByPath()
+    {
+        transform.position = _path[_pathIndex].position;
+        transform.rotation = _path[_pathIndex].rotation;
+        ++_pathIndex;
+    }
+
+    private void DriveByPlayer()
+    {
         ApplySteering();
+        ApplyEngineForce();
     }
 
     private void ApplySteering()
     {
+        if (_rb.linearVelocity.magnitude < minTurningSpeed)
+            return;
         _rotationAngle -= Mathf.Sign(_turnInput) * Mathf.Log(Mathf.Abs(_turnInput) * 5.0f + 1.0f, 2) * turnSpeed;
         _rb.MoveRotation(_rotationAngle);
     }
