@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 719038635}
   - component: {fileID: 719038638}
   - component: {fileID: 719038639}
+  - component: {fileID: 719038640}
   m_Layer: 0
   m_Name: SimpleCar
   m_TagString: Untagged
@@ -244,8 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accelerationSpeed: 30
-  turnSpeed: 3.5
-  driftFactor: 0.2
+  turnSpeed: 1
   maxSpeed: 10
 --- !u!212 &719038636
 SpriteRenderer:
@@ -370,6 +370,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &719038640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719038634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f64adf3026afda7a5c6310ff15557e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driftFactor: 0.24
 --- !u!1 &1147438521
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,8 +438,9 @@ GameObject:
   - component: {fileID: 1322242117}
   - component: {fileID: 1322242116}
   - component: {fileID: 1322242115}
+  - component: {fileID: 1322242118}
   m_Layer: 0
-  m_Name: "Anh\xE4nger"
+  m_Name: Trailer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,6 +543,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322242118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322242114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f64adf3026afda7a5c6310ff15557e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driftFactor: 0.17
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
