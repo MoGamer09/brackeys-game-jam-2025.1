@@ -3664,6 +3664,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Semi
       objectReference: {fileID: 0}
+    - target: {fileID: 5382039804093939207, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000019430543
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382039804093939207, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 2.7745526
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

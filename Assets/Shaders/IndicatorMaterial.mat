@@ -54,11 +54,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BorderWidth: 0.42
-    - _Max: 0.34
+    - _BorderWidth: 0.2
+    - _Max: 0.5
     - _Min: 0.1
-    - _speed: 2
+    - _speed: 5
     m_Colors:
-    - _Color: {r: 1, g: 0.8593202, b: 0, a: 1}
+    - _Color: {r: 0.91372555, g: 0.67058825, b: 0.21960786, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
