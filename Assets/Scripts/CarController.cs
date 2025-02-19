@@ -139,4 +139,15 @@ public class CarController : MonoBehaviour, IInputReceiver
         Vector2 engineForce = transform.up * (_accelerationInput * accelerationSpeed);
         _rb.AddForce(engineForce, ForceMode2D.Force);
     }
+    
+    public static CarController GetCarController(GameObject carParent)
+    {
+        var carController = carParent.GetComponent<CarController>();
+        if (!carController)
+            carController = carParent.GetComponentInChildren<CarController>();
+        if (!carController)
+            throw new UnityException("No CarController found");
+        
+        return carController;
+    }
 }
