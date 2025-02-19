@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 78dceca8dfc965a4c8901056734f7f7c
+guid: 5f4625468f02e5e47aa27354af7f1214
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2079549433594689668
-    second: car3_0
+      213: 6715957911979874120
+    second: police_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: car3_0
+      name: police_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 772
-        height: 1377
+        width: 98
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7749bddec4f323e0800000000000000
-      internalID: -2079549433594689668
+      spriteID: 847d8066320e33d50800000000000000
+      internalID: 6715957911979874120
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      car3_0: -2079549433594689668
+      police_0: 6715957911979874120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
