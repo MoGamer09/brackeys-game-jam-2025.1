@@ -20,7 +20,7 @@ public class IndicatorManager : MonoBehaviour
         propertyBlock.SetColor("_Color", color);
         propertyBlock.SetFloat("_Max", max);
         propertyBlock.SetFloat("_Min", min);
-        propertyBlock.SetFloat("_borderWidth", borderWidth);
+        propertyBlock.SetFloat("_BorderWidth", borderWidth);
         propertyBlock.SetFloat("_speed", speed);
         
 
