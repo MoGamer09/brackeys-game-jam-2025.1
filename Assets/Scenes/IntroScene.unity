@@ -981,6 +981,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be28c55f780729140b0943c8f2e37599, type: 3}
+--- !u!1 &457179050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8746654869797669059, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+  m_PrefabInstance: {fileID: 2131259607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &484644204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2073,6 +2078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   situations:
+  - car: {fileID: 457179050}
+    waypoint: {fileID: 336862658}
   - car: {fileID: 1439625876}
     waypoint: {fileID: 2126707191}
   - car: {fileID: 936698756}
@@ -2081,8 +2088,6 @@ MonoBehaviour:
     waypoint: {fileID: 1360610154}
   - car: {fileID: 1153750934}
     waypoint: {fileID: 1402620872}
-  - car: {fileID: 2131259609}
-    waypoint: {fileID: 336862658}
   - car: {fileID: 1942532676}
     waypoint: {fileID: 1250691579}
 --- !u!1001 &1153750933
@@ -3489,11 +3494,6 @@ PrefabInstance:
 --- !u!1 &2131259608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3656083025995164786, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
-  m_PrefabInstance: {fileID: 2131259607}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2131259609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3672715291799903472, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
   m_PrefabInstance: {fileID: 2131259607}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

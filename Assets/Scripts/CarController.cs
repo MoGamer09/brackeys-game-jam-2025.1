@@ -31,6 +31,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     {
         _rb = GetComponent<Rigidbody2D>();
         _followPath = false;
+        _rotationAngle = transform.eulerAngles.z;
     }
 
     public void UpdateInputs(Vector2 inputs)
