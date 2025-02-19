@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6e183e0ad424e8e4dab7fe46d7032d7e
+guid: 167a04ce0d7e7244193c81fc3e2c6d75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7458024776356733945
-    second: explosion5_0
+      213: -672775578463324304
+    second: RoundedSquareGradient_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 255, y: 255, z: 255, w: 255}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explosion5_0
+      name: RoundedSquareGradient_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 51
-        height: 52
+        width: 521
+        height: 527
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 258, y: 258, z: 258, w: 258}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f32ec0150a308760800000000000000
-      internalID: 7458024776356733945
+      spriteID: 077b2280d22d9a6f0800000000000000
+      internalID: -672775578463324304
       vertices: []
       indices: 
       edges: []
@@ -151,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 807a97c9362ac044f8fe5a705e810cb5
+    internalID: 309045093
     vertices: []
     indices: 
     edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      explosion5_0: 7458024776356733945
+      RoundedSquareGradient_0: -672775578463324304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

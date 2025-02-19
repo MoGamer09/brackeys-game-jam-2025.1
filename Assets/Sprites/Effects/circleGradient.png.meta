@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6e183e0ad424e8e4dab7fe46d7032d7e
+guid: 0acef16d84535a54ea1da8dbec27b37e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7458024776356733945
-    second: explosion5_0
+      213: 5255833089565076053
+    second: circleGradient_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explosion5_0
+      name: circleGradient_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 51
-        height: 52
+        width: 855
+        height: 855
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f32ec0150a308760800000000000000
-      internalID: 7458024776356733945
+      spriteID: 55a254e295870f840800000000000000
+      internalID: 5255833089565076053
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      explosion5_0: 7458024776356733945
+      circleGradient_0: 5255833089565076053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
