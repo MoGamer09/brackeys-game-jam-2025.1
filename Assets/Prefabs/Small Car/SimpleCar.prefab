@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8064356482070076376}
   - component: {fileID: 4365912045490516394}
   - component: {fileID: 1095713779260158841}
+  - component: {fileID: 2899607410578731650}
   m_Layer: 0
   m_Name: SimpleCar
   m_TagString: Untagged
@@ -107,6 +108,7 @@ MonoBehaviour:
   turnSpeed: 1
   maxSpeed: 12
   minTurningSpeed: 0.5
+  _adherents: []
 --- !u!50 &8064356482070076376
 Rigidbody2D:
   serializedVersion: 5
@@ -193,3 +195,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2899607410578731650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4143814212904968451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696cae043b5b903c781dfe86540004b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  explosionScale: 2

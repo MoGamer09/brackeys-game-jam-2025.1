@@ -14,7 +14,7 @@ public class WaypointBehaviour : MonoBehaviour
     {
         if (_deactivated) return;
         
-        var carController = CarController.GetCarController(other.gameObject);
+        var carController = CarController.GetComponent<CarController>(other.gameObject);
         if (!carController || !carController.IsDrivenByPlayer()) return;
         
         OnWaypointReached.Invoke();

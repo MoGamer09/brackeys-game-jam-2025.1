@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CarPhysics))]
@@ -19,6 +20,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     
     private Rigidbody2D _rb;
 
+    private bool _playerIsAlive;
     private bool _followPath;
     private RecordEntry[] _path;
 
@@ -31,6 +33,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     {
         _rb = GetComponent<Rigidbody2D>();
         _followPath = false;
+        _playerIsAlive = true;
         _rotationAngle = transform.eulerAngles.z;
     }
 
@@ -83,6 +86,13 @@ public class CarController : MonoBehaviour, IInputReceiver
         };
     }
 
+    public void KillPlayer()
+    {
+        _playerIsAlive = false;
+        _rb.linearVelocity = Vector2.zero;
+        _rb.angularVelocity = 0.7f;
+    }
+
     private void DriveByPath()
     {
         if (_path.Length == 0) return;
@@ -99,6 +109,8 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private void DriveByPlayer()
     {
+        if (!_playerIsAlive) return;
+        
         ApplySteering();
         ApplyEngineForce();
     }
@@ -140,14 +152,20 @@ public class CarController : MonoBehaviour, IInputReceiver
         _rb.AddForce(engineForce, ForceMode2D.Force);
     }
     
-    public static CarController GetCarController(GameObject carParent)
+    public static T GetComponent<T>(GameObject carParent)
     {
-        var carController = carParent.GetComponent<CarController>();
-        if (!carController)
-            carController = carParent.GetComponentInChildren<CarController>();
-        if (!carController)
+        var t = carParent.GetComponent<T>() ?? carParent.GetComponentInChildren<T>();
+        if (t == null)
             throw new UnityException("No CarController found");
         
-        return carController;
+        return t;
+    }
+    public static T[] GetAllComponents<T>(GameObject carParent)
+    {
+        var ts = new List<T>();
+        ts.AddRange(carParent.GetComponents<T>());
+        ts.AddRange(carParent.GetComponentsInChildren<T>());
+        
+        return ts.ToArray();
     }
 }

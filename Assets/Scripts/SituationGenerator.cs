@@ -29,7 +29,7 @@ public class SituationGenerator : MonoBehaviour
         }
     }
 
-    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete)
+    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete, Action onFail)
     {
         if (_situationIndex >= situations.Length)
         {
@@ -42,6 +42,9 @@ public class SituationGenerator : MonoBehaviour
         
         var car = situations[_situationIndex].car;
         car.SetActive(true);
+        var explosionTriggers = CarController.GetAllComponents<ExplosionTrigger>(car);
+        foreach (var explosionTrigger in explosionTriggers)
+            explosionTrigger.OnFail = onFail;
 
         ++_situationIndex;
         return car;
