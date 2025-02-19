@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(SituationGenerator), typeof(Recorder))]
@@ -10,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     private uint _pathIndex;
     
-    void Awake()
+    private void Awake()
     {
         Application.targetFrameRate = 60;
         
@@ -18,26 +19,32 @@ public class GameManager : MonoBehaviour
         _recorder = GetComponent<Recorder>();
     }
 
-    void Start()
+    private void Start()
     {
         NextSituation();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         ++_pathIndex;
     }
 
-    void NextSituation()
+    private void NextSituation()
     {
         var activeCar = ActiveCar();
-        var nextCar = _situationGenerator.GenerateSituation(NextSituation);
+        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel);
         var oldPath = deepCopy(_recorder.StopRecording());
-        _recorder.StartRecording(nextCar);
+        _recorder.StartRecording(nextCar.GetComponent<CarController>());
         _pathIndex = 0;
         
         if (!activeCar) return; // first car
         activeCar.SetPath(oldPath, PathIndex);
+    }
+
+    private void NextLevel()
+    {
+        print("next level");
+        EditorApplication.isPlaying = true; // NOTE halting until level change
     }
 
     private uint PathIndex()
@@ -48,7 +55,7 @@ public class GameManager : MonoBehaviour
     [CanBeNull]
     public static CarController ActiveCar()
     {
-        var carControllers = FindObjectsByType<CarController>(FindObjectsSortMode.None);
+        var carControllers = FindObjectsByType<CarController>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
         foreach (var carController in carControllers)
             if (carController.IsDrivenByPlayer())
                 return carController;

@@ -5,11 +5,13 @@ public struct RecordEntry
 {
     public Vector2 position;
     public Quaternion rotation;
+    
+    public RecordEntry[] adherents;
 }
 
 public class Recorder : MonoBehaviour
 {
-    private GameObject _activeCar;
+    private CarController _activeCar;
     
     private bool _recording = false;
     private List<RecordEntry> _records;
@@ -27,13 +29,10 @@ public class Recorder : MonoBehaviour
 
     private void Record()
     {
-        _records.Add(new RecordEntry {
-            position = _activeCar.transform.position,
-            rotation = _activeCar.transform.rotation
-        });
+        _records.Add(_activeCar.PathEntry());
     }
 
-    public void StartRecording(GameObject car)
+    public void StartRecording(CarController car)
     {
         _activeCar = car;
         _recording = true;

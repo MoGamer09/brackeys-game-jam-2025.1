@@ -1,33 +1,50 @@
 using System;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
+
+[Serializable]
+public struct SituationData
+{
+    public GameObject car;
+    public GameObject waypoint;
+}
 
 public class SituationGenerator : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _waypoint;
+    private SituationData[] situations;
 
-    [SerializeField]
-    private GameObject[] _carPrefabs;
+    private uint _situationIndex;
 
-    [SerializeField]
-    private Vector2 _expanse;
-
-    public GameObject GenerateSituation(Action onFinished)
+    private void Awake()
     {
-        // Random for testing
-        var randomPosition = RandomPosition();
-        if (randomPosition.magnitude < _expanse.magnitude * 0.2f)
-            randomPosition *= 3.0f;
-        var waypoint = Instantiate(_waypoint, randomPosition, Quaternion.identity);
-        waypoint.GetComponent<WaypointBehaviour>().OnWaypointReached = onFinished;
-        var car = Instantiate(_carPrefabs[Random.Range(0, _carPrefabs.Length)], -randomPosition, Quaternion.identity);
-        return car;
+        _situationIndex = 0;
 
+        for (var i = 0; i < situations.Length; i++)
+        {
+            situations[i].car.SetActive(false);
+            situations[i].waypoint.SetActive(false);
+        }
     }
 
-    private Vector2 RandomPosition()
+    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete)
     {
-        return new Vector2(Random.Range(-_expanse.x, _expanse.x), Random.Range(-_expanse.y, _expanse.y));
+        if (_situationIndex >= situations.Length)
+        {
+            onLevelComplete?.Invoke();
+            return null;
+        }
+        var waypoint = situations[_situationIndex].waypoint;
+        waypoint.SetActive(true);
+        waypoint.GetComponent<WaypointBehaviour>().OnWaypointReached = onFinished;
+        
+        var car = situations[_situationIndex].car;
+        car.SetActive(true);
+
+        ++_situationIndex;
+        return car;
+
     }
 }

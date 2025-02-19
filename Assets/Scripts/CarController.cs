@@ -23,6 +23,9 @@ public class CarController : MonoBehaviour, IInputReceiver
     private RecordEntry[] _path;
 
     private Func<uint> PathIndex;
+
+    [SerializeField]
+    private GameObject[] _adherents;
     
     void Awake()
     {
@@ -62,11 +65,35 @@ public class CarController : MonoBehaviour, IInputReceiver
         return _followPath;
     }
 
+    public RecordEntry PathEntry()
+    {
+        var adherentEntries = new RecordEntry[_adherents.Length];
+        for (var i = 0; i < _adherents.Length; i++)
+        {
+            adherentEntries[i].position = _adherents[i].transform.position;
+            adherentEntries[i].rotation = _adherents[i].transform.rotation;
+        }
+
+        return new RecordEntry()
+        {
+            position = transform.position,
+            rotation = transform.rotation,
+            adherents = adherentEntries,
+        };
+    }
+
     private void DriveByPath()
     {
+        if (_path.Length == 0) return;
         var pathIndex = Math.Min(PathIndex.Invoke(), _path.Length - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
+
+        for (var i = 0; i < _adherents.Length; i++)
+        {
+            _adherents[i].transform.position = _path[pathIndex].adherents[i].position;
+            _adherents[i].transform.rotation = _path[pathIndex].adherents[i].rotation;
+        }
     }
 
     private void DriveByPlayer()
