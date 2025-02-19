@@ -29,12 +29,17 @@ public class CarController : MonoBehaviour, IInputReceiver
     [SerializeField]
     private GameObject[] _adherents;
     
+    private IndicatorManager _indicatorManager;
+    
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _followPath = false;
         _playerIsAlive = true;
         _rotationAngle = transform.eulerAngles.z;
+        _indicatorManager = GetComponentInChildren<IndicatorManager>();
+        _indicatorManager.ShowIndicator();
+        
     }
 
     public void UpdateInputs(Vector2 inputs)
@@ -109,6 +114,14 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private void DriveByPlayer()
     {
+        if (!_indicatorManager.IsHidden())
+        {
+            if (_accelerationInput != 0)
+            {
+                _indicatorManager.HideIndicator();
+            }
+        }
+        
         if (!_playerIsAlive) return;
         
         ApplySteering();
