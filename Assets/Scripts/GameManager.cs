@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         var activeCar = ActiveCar();
         var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel);
         var oldPath = deepCopy(_recorder.StopRecording());
-        _recorder.StartRecording(nextCar.GetComponent<CarController>());
+        _recorder.StartRecording(CarController.GetCarController(nextCar));
         _pathIndex = 0;
         
         if (!activeCar) return; // first car
