@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3125459883759053261, guid: 22136b8dc4d59d94c887f84911c176ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -263,6 +263,14 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 2.7745533
       objectReference: {fileID: 0}
+    - target: {fileID: 5382039804093939207, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: -23.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382039804093939207, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: m_AngleLimits.m_UpperAngle
+      value: 204.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -333,8 +341,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 237.39963
-    m_UpperAngle: 502.17627
+    m_LowerAngle: 324.3
+    m_UpperAngle: 574.7
 --- !u!114 &4745674525685051020
 MonoBehaviour:
   m_ObjectHideFlags: 0
