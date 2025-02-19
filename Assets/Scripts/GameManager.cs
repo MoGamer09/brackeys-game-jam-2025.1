@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(SituationGenerator), typeof(Recorder))]
 public class GameManager : MonoBehaviour
@@ -10,6 +12,12 @@ public class GameManager : MonoBehaviour
     private Recorder _recorder;
 
     private uint _pathIndex;
+    private bool _updatePathIndex;
+    
+    [SerializeField]
+    private String nextScene;
+    
+    private UIManager _uiManager;
     
     private void Awake()
     {
@@ -17,6 +25,7 @@ public class GameManager : MonoBehaviour
         
         _situationGenerator = GetComponent<SituationGenerator>();
         _recorder = GetComponent<Recorder>();
+        _uiManager = FindFirstObjectByType<UIManager>();
     }
 
     private void Start()
@@ -26,25 +35,35 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ++_pathIndex;
+        if (_updatePathIndex)
+            ++_pathIndex;
     }
 
     private void NextSituation()
     {
         var activeCar = ActiveCar();
-        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel);
+        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel, GameOver);
         var oldPath = deepCopy(_recorder.StopRecording());
-        _recorder.StartRecording(CarController.GetCarController(nextCar));
+        _recorder.StartRecording(CarController.GetComponent<CarController>(nextCar));
+        
         _pathIndex = 0;
+        _updatePathIndex = true;
         
         if (!activeCar) return; // first car
         activeCar.SetPath(oldPath, PathIndex);
     }
 
+    private void GameOver()
+    {
+        _uiManager.GameOver();
+        _updatePathIndex = false;
+        ActiveCar()?.KillPlayer();
+    }
+
     private void NextLevel()
     {
         print("next level");
-        EditorApplication.isPlaying = true; // NOTE halting until level change
+        SceneManager.LoadScene(nextScene);
     }
 
     private uint PathIndex()

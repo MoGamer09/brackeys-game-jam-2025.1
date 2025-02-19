@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2893708708802256509}
   - component: {fileID: 5164942879996062355}
   - component: {fileID: 6923635492100410566}
+  - component: {fileID: 1175624144608366209}
   m_Layer: 0
   m_Name: Trailer
   m_TagString: Untagged
@@ -176,6 +177,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.725, y: 5.99}
   m_EdgeRadius: 0
+--- !u!114 &1175624144608366209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656083025995164786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696cae043b5b903c781dfe86540004b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  explosionScale: 2
 --- !u!1 &3672715291799903472
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +239,7 @@ GameObject:
   - component: {fileID: 5382039804093939207}
   - component: {fileID: 7060671465729085179}
   - component: {fileID: 203730979574813850}
+  - component: {fileID: 3340812136024582117}
   m_Layer: 0
   m_Name: SimpleCar
   m_TagString: Untagged
@@ -317,6 +333,8 @@ MonoBehaviour:
   turnSpeed: 1
   maxSpeed: 10
   minTurningSpeed: 0.5
+  _adherents:
+  - {fileID: 3656083025995164786}
 --- !u!50 &379659670879643315
 Rigidbody2D:
   serializedVersion: 5
@@ -360,16 +378,16 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.51}
-  m_ConnectedAnchor: {x: 0, y: 2.7745543}
+  m_ConnectedAnchor: {x: -0.00000019430543, y: 2.7745526}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -109.96694
+    m_UpperAngle: 112.78249
 --- !u!114 &7060671465729085179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,3 +447,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.66, y: 1.31}
   m_EdgeRadius: 0
+--- !u!114 &3340812136024582117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746654869797669059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696cae043b5b903c781dfe86540004b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  explosionScale: 2
