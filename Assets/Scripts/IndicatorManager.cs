@@ -8,9 +8,16 @@ public class IndicatorManager : MonoBehaviour
     public float speed = 2f;
     public float borderWidth = 0.2f;
     public Color color = new Color(1,0.85f,00);
-    
-    
+    private bool _hidden = false;
+    private SpriteRenderer _spriteRenderer;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
+
     void Start()
     {
         // Create a new MaterialPropertyBlock
@@ -20,7 +27,7 @@ public class IndicatorManager : MonoBehaviour
         propertyBlock.SetColor("_Color", color);
         propertyBlock.SetFloat("_Max", max);
         propertyBlock.SetFloat("_Min", min);
-        propertyBlock.SetFloat("_borderWidth", borderWidth);
+        propertyBlock.SetFloat("_BorderWidth", borderWidth);
         propertyBlock.SetFloat("_speed", speed);
         
 
@@ -28,14 +35,21 @@ public class IndicatorManager : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().SetPropertyBlock(propertyBlock);
     }
 
+    public bool IsHidden()
+    {
+        return _hidden;
+    }
+
     public void ShowIndicator()
     {
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        _hidden = false;
     }
 
     public void HideIndicator()
     {
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        _hidden = true;
+        _spriteRenderer.enabled = false;
     }
 
 }

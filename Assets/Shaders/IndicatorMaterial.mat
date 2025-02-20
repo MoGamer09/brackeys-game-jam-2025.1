@@ -58,13 +58,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlinkSpeed: 0
-    - _BorderWidth: 0.42
-    - _Dim: 0
-    - _Max: 0.34
+    - _BorderWidth: 0
+    - _Max: 0.5
     - _Min: 0.1
-    - _speed: 2
+    - _speed: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.8593202, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.85, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
