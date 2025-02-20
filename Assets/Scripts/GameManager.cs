@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     
     private UIManager _uiManager;
     
+    private CarController[] _cars = Array.Empty<CarController>();
+    
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
         _situationGenerator = GetComponent<SituationGenerator>();
         _recorder = GetComponent<Recorder>();
         _uiManager = FindFirstObjectByType<UIManager>();
+        _cars = FindObjectsByType<CarController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
     }
 
     private void Start()
@@ -48,6 +51,11 @@ public class GameManager : MonoBehaviour
         
         _pathIndex = 0;
         _updatePathIndex = true;
+
+        foreach (var car in _cars)
+        {
+            car.RemoveTireMarks();
+        }
         
         if (!activeCar) return; // first car
         activeCar.SetPath(oldPath, PathIndex);

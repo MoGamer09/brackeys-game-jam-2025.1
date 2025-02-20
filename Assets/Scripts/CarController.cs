@@ -31,6 +31,8 @@ public class CarController : MonoBehaviour, IInputReceiver
     
     private IndicatorManager _indicatorManager;
     
+    private List<TrailRenderer> _tiremarks = new List<TrailRenderer>();
+    
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -39,7 +41,11 @@ public class CarController : MonoBehaviour, IInputReceiver
         _rotationAngle = transform.eulerAngles.z;
         _indicatorManager = GetComponentInChildren<IndicatorManager>();
         _indicatorManager.ShowIndicator();
-        
+        _tiremarks.AddRange(GetComponentsInChildren<TrailRenderer>());
+        foreach (var adherent in _adherents)
+        {
+            _tiremarks.AddRange(adherent.GetComponentsInChildren<TrailRenderer>());
+        }
     }
 
     public void UpdateInputs(Vector2 inputs)
@@ -101,7 +107,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     private void DriveByPath()
     {
         if (_path.Length == 0) return;
-        var pathIndex = Math.Min(PathIndex.Invoke(), _path.Length - 1);
+        var pathIndex = Math.Min(PathIndex(), _path.Length - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
 
@@ -109,6 +115,20 @@ public class CarController : MonoBehaviour, IInputReceiver
         {
             _adherents[i].transform.position = _path[pathIndex].adherents[i].position;
             _adherents[i].transform.rotation = _path[pathIndex].adherents[i].rotation;
+        }
+        
+        if (PathIndex() <= 1)
+        {
+            RemoveTireMarks();
+        }
+    }
+
+    public void RemoveTireMarks()
+    {
+        Debug.Log("Removing Tire Marks");
+        foreach (var tiremark in _tiremarks)
+        {
+            tiremark.Clear();
         }
     }
 
