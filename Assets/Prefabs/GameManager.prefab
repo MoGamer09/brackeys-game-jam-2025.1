@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6096372447562320646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510823362213554669}
+  - component: {fileID: 3926378295143303155}
+  - component: {fileID: 2201295679881263679}
+  - component: {fileID: 6354545710510999758}
+  - component: {fileID: 2097846682980020399}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510823362213554669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096372447562320646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.72429997, y: 1.512381, z: -0.0045971763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3926378295143303155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096372447562320646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9114e095450e9e47a547d35afd2c325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2201295679881263679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096372447562320646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c780dd5b588c6544b0ed980831a502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: SampleScene
+--- !u!114 &6354545710510999758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096372447562320646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2feb35dd9fe229f839d0c0654a056eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  situations:
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+  - car: {fileID: 0}
+    waypoint: {fileID: 0}
+    order:
+      orderNumber: 0
+      date: 
+      client: 
+      contactPerson: 
+      description: 
+      distance: 0
+      departureTime: 
+      priorityLevel: 
+      payment: 0
+--- !u!114 &2097846682980020399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096372447562320646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df5664bed97decfc9b3b75758eaa572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
