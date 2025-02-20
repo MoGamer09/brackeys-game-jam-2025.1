@@ -9,6 +9,22 @@ public struct SituationData
 {
     public GameObject car;
     public GameObject waypoint;
+    public OrderData order;
+}
+
+//Only for the visual representation of the order
+[Serializable]
+public struct OrderData
+{
+    public int orderNumber;
+    public string date;
+    public string client;
+    public string contactPerson;
+    public string description;
+    public float distance;
+    public string departureTime;
+    public string priorityLevel;
+    public int payment;
 }
 
 public class SituationGenerator : MonoBehaviour
