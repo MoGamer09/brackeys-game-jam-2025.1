@@ -17,11 +17,11 @@ public class ButtonAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        _text.transform.localScale = Vector3.one * 1.2f;
+        LeanTween.scale(_text.rectTransform, Vector3.one * 1.2f, 0.2f).setEaseInOutExpo();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        _text.transform.localScale = Vector3.one;
+        LeanTween.scale(_text.rectTransform, Vector3.one, 0.2f).setEaseInOutExpo();
     }
 }
