@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuBehaviour : MonoBehaviour
 {
@@ -55,5 +56,10 @@ public class MainMenuBehaviour : MonoBehaviour
         
         mainMenuParent.SetActive(false);
         mainMenuBackground.SetActive(false);
+    }
+
+    public void LoadScene(int sceneBuildIndex)
+    {
+        SceneManager.LoadScene(sceneBuildIndex);
     }
 }
