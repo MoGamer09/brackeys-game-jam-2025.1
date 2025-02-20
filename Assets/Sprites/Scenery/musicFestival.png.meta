@@ -1,0 +1,2535 @@
+fileFormatVersion: 2
+guid: a636d7940aad8594ab143b26e57a8a1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7407588593324726700
+    second: musicFestival_0
+  - first:
+      213: 3256348248895545945
+    second: musicFestival_1
+  - first:
+      213: -3760400477424007705
+    second: musicFestival_2
+  - first:
+      213: -5081762075631088197
+    second: musicFestival_3
+  - first:
+      213: -353333436794282111
+    second: musicFestival_4
+  - first:
+      213: 123269353528123985
+    second: musicFestival_5
+  - first:
+      213: 658196114565464809
+    second: musicFestival_6
+  - first:
+      213: 8126974106649606210
+    second: musicFestival_7
+  - first:
+      213: -7071828630025794040
+    second: musicFestival_8
+  - first:
+      213: -6474950053059444401
+    second: musicFestival_9
+  - first:
+      213: 7648003965988593100
+    second: musicFestival_10
+  - first:
+      213: 1983302161985908678
+    second: musicFestival_11
+  - first:
+      213: -1076526486828824471
+    second: musicFestival_12
+  - first:
+      213: 7408863100997556496
+    second: musicFestival_13
+  - first:
+      213: 2889484006729705779
+    second: musicFestival_14
+  - first:
+      213: 2661798747322679576
+    second: musicFestival_15
+  - first:
+      213: 2988278710272408047
+    second: musicFestival_16
+  - first:
+      213: -8574265508705506827
+    second: musicFestival_17
+  - first:
+      213: -580601969953460362
+    second: musicFestival_18
+  - first:
+      213: 3000713189329397664
+    second: musicFestival_19
+  - first:
+      213: -412311317428209611
+    second: musicFestival_20
+  - first:
+      213: -5983136345327102709
+    second: musicFestival_21
+  - first:
+      213: -3733009909880576342
+    second: musicFestival_22
+  - first:
+      213: 5370115423753509507
+    second: musicFestival_23
+  - first:
+      213: -6498424625879761902
+    second: musicFestival_24
+  - first:
+      213: 8256228392555828411
+    second: musicFestival_25
+  - first:
+      213: 6134867339574669388
+    second: musicFestival_26
+  - first:
+      213: -6198977271380237128
+    second: musicFestival_27
+  - first:
+      213: 8079850277886427844
+    second: musicFestival_28
+  - first:
+      213: -850413977760243770
+    second: musicFestival_29
+  - first:
+      213: 6180471968162486172
+    second: musicFestival_30
+  - first:
+      213: 2601183152900176035
+    second: musicFestival_31
+  - first:
+      213: -5248463514679201597
+    second: musicFestival_32
+  - first:
+      213: -5640097744133969389
+    second: musicFestival_33
+  - first:
+      213: -4612543450676394563
+    second: musicFestival_34
+  - first:
+      213: -6152271678894046486
+    second: musicFestival_35
+  - first:
+      213: 2265887924137193569
+    second: musicFestival_36
+  - first:
+      213: -6148638348211187880
+    second: musicFestival_37
+  - first:
+      213: 4769895654332353695
+    second: musicFestival_38
+  - first:
+      213: -1098847995339785448
+    second: musicFestival_39
+  - first:
+      213: -3579616174544066553
+    second: musicFestival_40
+  - first:
+      213: -3632773964882225922
+    second: musicFestival_41
+  - first:
+      213: 3093630727024070026
+    second: musicFestival_42
+  - first:
+      213: 8630748649700411248
+    second: musicFestival_43
+  - first:
+      213: 9033256915837237235
+    second: musicFestival_44
+  - first:
+      213: 2494389212248171909
+    second: musicFestival_45
+  - first:
+      213: -3113714894838266271
+    second: musicFestival_46
+  - first:
+      213: 5179839483845393076
+    second: musicFestival_47
+  - first:
+      213: -2132234682309136987
+    second: musicFestival_48
+  - first:
+      213: 6189448805254703474
+    second: musicFestival_49
+  - first:
+      213: 5912406472353773055
+    second: musicFestival_50
+  - first:
+      213: -5223456602284860244
+    second: musicFestival_51
+  - first:
+      213: -1491772950824144511
+    second: musicFestival_52
+  - first:
+      213: -583255717576397762
+    second: musicFestival_53
+  - first:
+      213: -4444622665525147105
+    second: musicFestival_54
+  - first:
+      213: -7438794746034896576
+    second: musicFestival_55
+  - first:
+      213: 659399248437983732
+    second: musicFestival_56
+  - first:
+      213: 7297010012202714301
+    second: musicFestival_57
+  - first:
+      213: 7221657217728413588
+    second: musicFestival_58
+  - first:
+      213: 4322807734173066879
+    second: musicFestival_59
+  - first:
+      213: -5402655708569687695
+    second: musicFestival_60
+  - first:
+      213: 6874962809885936461
+    second: musicFestival_61
+  - first:
+      213: 5821915003687089226
+    second: musicFestival_62
+  - first:
+      213: 5002294831727759192
+    second: musicFestival_63
+  - first:
+      213: -5660466893745295777
+    second: musicFestival_64
+  - first:
+      213: -4821830426716794660
+    second: musicFestival_65
+  - first:
+      213: -3416312151665353662
+    second: musicFestival_66
+  - first:
+      213: 8042033083921231232
+    second: musicFestival_67
+  - first:
+      213: 6557084764355880085
+    second: musicFestival_68
+  - first:
+      213: -2653443753372867658
+    second: musicFestival_69
+  - first:
+      213: 3674264840026929668
+    second: musicFestival_70
+  - first:
+      213: -4632686931661153561
+    second: musicFestival_71
+  - first:
+      213: 5459329616416610788
+    second: musicFestival_72
+  - first:
+      213: 5406211292327186940
+    second: musicFestival_73
+  - first:
+      213: 7552813059353477450
+    second: musicFestival_74
+  - first:
+      213: 8862000933697968777
+    second: musicFestival_75
+  - first:
+      213: -6015772031197726419
+    second: musicFestival_76
+  - first:
+      213: -8952224668956869146
+    second: musicFestival_77
+  - first:
+      213: -7959036030637569470
+    second: musicFestival_78
+  - first:
+      213: 1127447113967525996
+    second: musicFestival_79
+  - first:
+      213: 47769408028648294
+    second: musicFestival_80
+  - first:
+      213: 5397528387163916063
+    second: musicFestival_81
+  - first:
+      213: -5711827827645354447
+    second: musicFestival_82
+  - first:
+      213: -6192663560003883005
+    second: musicFestival_83
+  - first:
+      213: 4811060779539463591
+    second: musicFestival_84
+  - first:
+      213: -7481524868486389633
+    second: musicFestival_85
+  - first:
+      213: 2480050088506631700
+    second: musicFestival_86
+  - first:
+      213: 5683638704754366848
+    second: musicFestival_87
+  - first:
+      213: 2686597775262440197
+    second: musicFestival_88
+  - first:
+      213: -2925644055654588024
+    second: musicFestival_89
+  - first:
+      213: 5988182398200458267
+    second: musicFestival_90
+  - first:
+      213: 4694427893530462448
+    second: musicFestival_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: musicFestival_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456e4a4eb65f23990800000000000000
+      internalID: -7407588593324726700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 248
+        width: 429
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9526260ca7fd03d20800000000000000
+      internalID: 3256348248895545945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 351
+        width: 81
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5cee170bf50dbc0800000000000000
+      internalID: -3760400477424007705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 212
+        width: 614
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd05f80154f979b0800000000000000
+      internalID: -5081762075631088197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 176
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fdb9c7c15b81bf0800000000000000
+      internalID: -353333436794282111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 159
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1526cbce2d0f5b100800000000000000
+      internalID: 123269353528123985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 176
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2873101e1622900800000000000000
+      internalID: 658196114565464809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 176
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248b5a534efc8c070800000000000000
+      internalID: 8126974106649606210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 173
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e00e24451dbdd90800000000000000
+      internalID: -7071828630025794040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 170
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41cef48b3b5426a0800000000000000
+      internalID: -6474950053059444401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_10
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 176
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd5781161b232a60800000000000000
+      internalID: 7648003965988593100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 156
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf2f6feeca168b10800000000000000
+      internalID: 1983302161985908678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 176
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968c4492dd86f01f0800000000000000
+      internalID: -1076526486828824471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 176
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019557c8cb191d660800000000000000
+      internalID: 7408863100997556496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_14
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 156
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339eb4d1562891820800000000000000
+      internalID: 2889484006729705779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_15
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 177
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8118fbd9bdb90f420800000000000000
+      internalID: 2661798747322679576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 176
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe936a787af787920800000000000000
+      internalID: 2988278710272408047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_17
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 176
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f969bfb2f6120980800000000000000
+      internalID: -8574265508705506827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_18
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 156
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f2801a59941f7f0800000000000000
+      internalID: -580601969953460362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_19
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 177
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7eeca4fbca4a920800000000000000
+      internalID: 3000713189329397664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_20
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 169
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53871d39a0d274af0800000000000000
+      internalID: -412311317428209611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_21
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 156
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b059c06a131a7fca0800000000000000
+      internalID: -5983136345327102709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_22
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 179
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa62e8ae34fa13cc0800000000000000
+      internalID: -3733009909880576342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_23
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 156
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a9cab968b768a40800000000000000
+      internalID: 5370115423753509507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 130
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c39ce9b35f0d5a0800000000000000
+      internalID: -6498424625879761902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 129
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4d8cacaf3049270800000000000000
+      internalID: 8256228392555828411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 129
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c407e77675d632550800000000000000
+      internalID: 6134867339574669388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_27
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 153
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b429a8e30fc8f9a0800000000000000
+      internalID: -6198977271380237128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_28
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 151
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c203c3d405612070800000000000000
+      internalID: 8079850277886427844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_29
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 131
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfd29f2ef8b234f0800000000000000
+      internalID: -850413977760243770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 150
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97959e628275c550800000000000000
+      internalID: 6180471968162486172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 146
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a87850cb42491420800000000000000
+      internalID: 2601183152900176035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 153
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0b2fead36b927b0800000000000000
+      internalID: -5248463514679201597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 136
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31aa966fbf85ab1b0800000000000000
+      internalID: -5640097744133969389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 147
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5016f7b24fcffb0800000000000000
+      internalID: -4612543450676394563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_35
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 153
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae203d1118dbe9aa0800000000000000
+      internalID: -6152271678894046486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 136
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1607b03df0d027f10800000000000000
+      internalID: 2265887924137193569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_37
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 147
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f078acff5abaaa0800000000000000
+      internalID: -6148638348211187880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 149
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cc82c53d2123240800000000000000
+      internalID: 4769895654332353695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_39
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 133
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b3f97f19b10c0f0800000000000000
+      internalID: -1098847995339785448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_40
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 107
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708ee0c0e06a25ec0800000000000000
+      internalID: -3579616174544066553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_41
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 107
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef458e1835bc59dc0800000000000000
+      internalID: -3632773964882225922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_42
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 129
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dc08661c8ceea20800000000000000
+      internalID: 3093630727024070026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_43
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 109
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07743135b2496c770800000000000000
+      internalID: 8630748649700411248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_44
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 109
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7b1510e439c5d70800000000000000
+      internalID: 9033256915837237235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_45
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5856e9fc5c9dd9220800000000000000
+      internalID: 2494389212248171909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_46
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 108
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1668251ecccd9c4d0800000000000000
+      internalID: -3113714894838266271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bab52c019c72e740800000000000000
+      internalID: 5179839483845393076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_48
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad223f7ad7c862e0800000000000000
+      internalID: -2132234682309136987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_49
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 107
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2792ca035e655e550800000000000000
+      internalID: 6189448805254703474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_50
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 107
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5fd508c561d0250800000000000000
+      internalID: 5912406472353773055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_51
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac542135ed8287b0800000000000000
+      internalID: -5223456602284860244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_52
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181379ca7682c4be0800000000000000
+      internalID: -1491772950824144511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_53
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 107
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ca4acd30cd7e7f0800000000000000
+      internalID: -583255717576397762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_54
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 107
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a49bcfb378152c0800000000000000
+      internalID: -4444622665525147105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_55
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 126
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0414c85479714c890800000000000000
+      internalID: -7438794746034896576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_56
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 126
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f93e407f18a62900800000000000000
+      internalID: 659399248437983732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_57
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 126
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4cfc3e1ff244560800000000000000
+      internalID: 7297010012202714301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_58
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 106
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f76504afa783460800000000000000
+      internalID: 7221657217728413588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_59
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 104
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7662b32bb2bdfb30800000000000000
+      internalID: 4322807734173066879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_60
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 90
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179a7fee149e505b0800000000000000
+      internalID: -5402655708569687695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_61
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 86
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bc54f1046c86f50800000000000000
+      internalID: 6874962809885936461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 103
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44394b99d89bc050800000000000000
+      internalID: 5821915003687089226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_63
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 85
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fc7ea65a8bb6540800000000000000
+      internalID: 5002294831727759192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_64
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 103
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ee37fb95bf171b0800000000000000
+      internalID: -5660466893745295777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_65
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 85
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0106826ca651db0800000000000000
+      internalID: -4821830426716794660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_66
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 103
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cd22ec232d690d0800000000000000
+      internalID: -3416312151665353662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_67
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 103
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d60173b7a0b9f60800000000000000
+      internalID: 8042033083921231232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_68
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 80
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594ee8d2ad17ffa50800000000000000
+      internalID: 6557084764355880085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_69
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 79
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b32bb007f21d2bd0800000000000000
+      internalID: -2653443753372867658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_70
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 77
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a3388a76c9df230800000000000000
+      internalID: 3674264840026929668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_71
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 60
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea1ebad7c365bfb0800000000000000
+      internalID: -4632686931661153561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_72
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 79
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e918428c5f63cb40800000000000000
+      internalID: 5459329616416610788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_73
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 69
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf11edbe688b60b40800000000000000
+      internalID: 5406211292327186940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_74
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 57
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4102b1067bf0d860800000000000000
+      internalID: 7552813059353477450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_75
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 67
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a5f3475e62cfa70800000000000000
+      internalID: 8862000933697968777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_76
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 75
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29bab6e53fa38ca0800000000000000
+      internalID: -6015772031197726419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_77
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 67
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed3651381f43c380800000000000000
+      internalID: -8952224668956869146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_78
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 76
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a005f16e2db8190800000000000000
+      internalID: -7959036030637569470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_79
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 49
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60e21b3d2f75af00800000000000000
+      internalID: 1127447113967525996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_80
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 35
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663ada40606b9a000800000000000000
+      internalID: 47769408028648294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_81
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 26
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f170ef5887fd7ea40800000000000000
+      internalID: 5397528387163916063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_82
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 28
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ee1037ad28bb0b0800000000000000
+      internalID: -5711827827645354447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_83
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 26
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30076746d4d3f0aa0800000000000000
+      internalID: -6192663560003883005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_84
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 46
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad7345f94254c240800000000000000
+      internalID: 4811060779539463591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_85
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 45
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f702e9b55c84c2890800000000000000
+      internalID: -7481524868486389633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_86
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 35
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4162d966a68ea6220800000000000000
+      internalID: 2480050088506631700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_87
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 38
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0899b8ce94750ee40800000000000000
+      internalID: 5683638704754366848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_88
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b5fd04176b84520800000000000000
+      internalID: 2686597775262440197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_89
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 9
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881a97b6b360667d0800000000000000
+      internalID: -2925644055654588024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_90
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 8
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c2cf61a2c4a1350800000000000000
+      internalID: 5988182398200458267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicFestival_91
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 18
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f881990c45f52140800000000000000
+      internalID: 4694427893530462448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      musicFestival_0: -7407588593324726700
+      musicFestival_1: 3256348248895545945
+      musicFestival_10: 7648003965988593100
+      musicFestival_11: 1983302161985908678
+      musicFestival_12: -1076526486828824471
+      musicFestival_13: 7408863100997556496
+      musicFestival_14: 2889484006729705779
+      musicFestival_15: 2661798747322679576
+      musicFestival_16: 2988278710272408047
+      musicFestival_17: -8574265508705506827
+      musicFestival_18: -580601969953460362
+      musicFestival_19: 3000713189329397664
+      musicFestival_2: -3760400477424007705
+      musicFestival_20: -412311317428209611
+      musicFestival_21: -5983136345327102709
+      musicFestival_22: -3733009909880576342
+      musicFestival_23: 5370115423753509507
+      musicFestival_24: -6498424625879761902
+      musicFestival_25: 8256228392555828411
+      musicFestival_26: 6134867339574669388
+      musicFestival_27: -6198977271380237128
+      musicFestival_28: 8079850277886427844
+      musicFestival_29: -850413977760243770
+      musicFestival_3: -5081762075631088197
+      musicFestival_30: 6180471968162486172
+      musicFestival_31: 2601183152900176035
+      musicFestival_32: -5248463514679201597
+      musicFestival_33: -5640097744133969389
+      musicFestival_34: -4612543450676394563
+      musicFestival_35: -6152271678894046486
+      musicFestival_36: 2265887924137193569
+      musicFestival_37: -6148638348211187880
+      musicFestival_38: 4769895654332353695
+      musicFestival_39: -1098847995339785448
+      musicFestival_4: -353333436794282111
+      musicFestival_40: -3579616174544066553
+      musicFestival_41: -3632773964882225922
+      musicFestival_42: 3093630727024070026
+      musicFestival_43: 8630748649700411248
+      musicFestival_44: 9033256915837237235
+      musicFestival_45: 2494389212248171909
+      musicFestival_46: -3113714894838266271
+      musicFestival_47: 5179839483845393076
+      musicFestival_48: -2132234682309136987
+      musicFestival_49: 6189448805254703474
+      musicFestival_5: 123269353528123985
+      musicFestival_50: 5912406472353773055
+      musicFestival_51: -5223456602284860244
+      musicFestival_52: -1491772950824144511
+      musicFestival_53: -583255717576397762
+      musicFestival_54: -4444622665525147105
+      musicFestival_55: -7438794746034896576
+      musicFestival_56: 659399248437983732
+      musicFestival_57: 7297010012202714301
+      musicFestival_58: 7221657217728413588
+      musicFestival_59: 4322807734173066879
+      musicFestival_6: 658196114565464809
+      musicFestival_60: -5402655708569687695
+      musicFestival_61: 6874962809885936461
+      musicFestival_62: 5821915003687089226
+      musicFestival_63: 5002294831727759192
+      musicFestival_64: -5660466893745295777
+      musicFestival_65: -4821830426716794660
+      musicFestival_66: -3416312151665353662
+      musicFestival_67: 8042033083921231232
+      musicFestival_68: 6557084764355880085
+      musicFestival_69: -2653443753372867658
+      musicFestival_7: 8126974106649606210
+      musicFestival_70: 3674264840026929668
+      musicFestival_71: -4632686931661153561
+      musicFestival_72: 5459329616416610788
+      musicFestival_73: 5406211292327186940
+      musicFestival_74: 7552813059353477450
+      musicFestival_75: 8862000933697968777
+      musicFestival_76: -6015772031197726419
+      musicFestival_77: -8952224668956869146
+      musicFestival_78: -7959036030637569470
+      musicFestival_79: 1127447113967525996
+      musicFestival_8: -7071828630025794040
+      musicFestival_80: 47769408028648294
+      musicFestival_81: 5397528387163916063
+      musicFestival_82: -5711827827645354447
+      musicFestival_83: -6192663560003883005
+      musicFestival_84: 4811060779539463591
+      musicFestival_85: -7481524868486389633
+      musicFestival_86: 2480050088506631700
+      musicFestival_87: 5683638704754366848
+      musicFestival_88: 2686597775262440197
+      musicFestival_89: -2925644055654588024
+      musicFestival_9: -6474950053059444401
+      musicFestival_90: 5988182398200458267
+      musicFestival_91: 4694427893530462448
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
