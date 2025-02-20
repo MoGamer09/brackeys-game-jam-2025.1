@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roofPiece1-dark_0: 7779871174774706271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
