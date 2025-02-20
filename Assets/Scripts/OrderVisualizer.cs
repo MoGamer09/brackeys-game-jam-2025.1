@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OrderVisualizer : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class OrderVisualizer : MonoBehaviour
     public Vector2 showPosition;
     public Vector2 hidePosition;
     public GameObject stamp;
-    
+    public Button AcceptButton;
+        
     public TMP_Text orderNumberTxt,
         dateTxt,
         contactTxt,
@@ -27,11 +29,12 @@ public class OrderVisualizer : MonoBehaviour
     public void ShowOrder(OrderData order, Action onAccept)
     {
         //Hide accapt
-        LeanTween.scale(stamp, Vector3.one * 2, 0f);
+        LeanTween.scale(stamp, Vector3.one * 3, 0f);
         LeanTween.color(stamp, Color.clear, 0f);
         
         //Show panel
         LeanTween.moveLocal(gameObject, showPosition, 0.5f).setEase(LeanTweenType.easeInOutCubic);
+        AcceptButton.gameObject.SetActive(true);
         
         orderNumberTxt.text = "Order No. " + order.orderNumber;
         dateTxt.text = order.date;
@@ -46,10 +49,11 @@ public class OrderVisualizer : MonoBehaviour
 
     public void AcceptOrder()
     {
+        AcceptButton.gameObject.SetActive(false);
         var seq = LeanTween.sequence();
         seq.append(() =>
         {
-            LeanTween.scale(stamp, Vector3.one, 0.1f).setEase(LeanTweenType.easeOutExpo);
+            LeanTween.scale(stamp, Vector3.one, 0.4f).setEase(LeanTweenType.easeOutExpo);
             LeanTween.color(stamp, Color.white, 0.1f);
         });
         seq.append(1);
