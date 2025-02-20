@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     
     private CarController[] _cars = Array.Empty<CarController>();
     
+    private bool _shouldJumpToNextSituation;
+    
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -29,25 +32,35 @@ public class GameManager : MonoBehaviour
         _recorder = GetComponent<Recorder>();
         _uiManager = FindFirstObjectByType<UIManager>();
         _cars = FindObjectsByType<CarController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        _shouldJumpToNextSituation = false;
     }
 
     private void Start()
     {
-        NextSituation();
+        ActuallyLoadNextSituation();
     }
 
     private void FixedUpdate()
     {
         if (_updatePathIndex)
             ++_pathIndex;
+
+        if (_shouldJumpToNextSituation && AllCarsDone())
+        {
+            ActuallyLoadNextSituation();
+            _shouldJumpToNextSituation = false;
+        }
     }
 
-    private void NextSituation()
+    private void ActuallyLoadNextSituation()
     {
         var activeCar = ActiveCar();
-        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel);
+        var nextCar = _situationGenerator.GenerateSituation(QueryNextSituation, NextLevel);
+
+        if (!nextCar) return;
+        
         var oldPath = deepCopy(_recorder.StopRecording());
-        _recorder.StartRecording(CarController.GetComponent<CarController>(nextCar));
+        _recorder.StartRecording(nextCar.GetComponentInChildren<CarController>());
         
         _pathIndex = 0;
         _updatePathIndex = true;
@@ -62,22 +75,25 @@ public class GameManager : MonoBehaviour
         activeCar.SetPath(oldPath, PathIndex);
     }
 
-    private void GameOver()
-    {
-        _uiManager.GameOver();
-        _updatePathIndex = false;
-        ActiveCar()?.KillPlayer();
-    }
-
     private void NextLevel()
     {
         print("next level");
-        SceneManager.LoadScene(nextScene);
+        // SceneManager.LoadScene(nextScene);
+    }
+
+    private void QueryNextSituation()
+    {
+        _shouldJumpToNextSituation = true;
     }
 
     private int PathIndex()
     {
         return _pathIndex;
+    }
+
+    private bool AllCarsDone()
+    {
+        return _cars.All(car => car.IsDone());
     }
 
     [CanBeNull]

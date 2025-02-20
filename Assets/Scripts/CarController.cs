@@ -23,10 +23,8 @@ public class CarController : MonoBehaviour, IInputReceiver
     private bool _playerIsAlive;
     private bool _followPath;
     private RecordEntry[] _path = Array.Empty<RecordEntry>();
-    [HideInInspector]
-    public int pathSize;
+    private int _pathSize;
     private bool _exploded;
-    [HideInInspector]
     public int priority;
 
     private Func<int> PathIndex;
@@ -112,7 +110,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     {
         _playerIsAlive = false;
         _rb.linearVelocity = Vector2.zero;
-        _rb.angularVelocity = 0.7f;
+        _rb.angularVelocity = 0.0f;
     }
 
     public void Explode(Collision2D other)
@@ -125,20 +123,25 @@ public class CarController : MonoBehaviour, IInputReceiver
         _exploded = true;
         if (IsFollowingPath())
         {
-            pathSize = PathIndex() + 1;
+            _pathSize = PathIndex() + 1;
         }
     }
 
+    public bool IsDone()
+    {
+        return !_playerIsAlive || PathIndex == null || PathIndex() >= _pathSize;
+    }
+    
     private void DriveByPath()
     {
-        if (PathIndex() > pathSize)
+        if (PathIndex() > _pathSize)
         {
             _rb.linearDamping = 3.0f;
             _rb.angularDamping = 3.0f;
             return;
         }
-        if (pathSize == 0) return;
-        var pathIndex = Math.Min(PathIndex(), pathSize - 1);
+        if (_pathSize == 0) return;
+        var pathIndex = Math.Min(PathIndex(), _pathSize - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
 
@@ -164,8 +167,9 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     public void ResetPath()
     {
-        pathSize = _path.Length;
+        _pathSize = _path.Length;
         _exploded = false;
+        _playerIsAlive = true;
     }
 
     private void DriveByPlayer()
@@ -219,22 +223,5 @@ public class CarController : MonoBehaviour, IInputReceiver
         
         Vector2 engineForce = transform.up * (_accelerationInput * accelerationSpeed);
         _rb.AddForce(engineForce, ForceMode2D.Force);
-    }
-    
-    public static T GetComponent<T>(GameObject carParent)
-    {
-        var t = carParent.GetComponent<T>() ?? carParent.GetComponentInChildren<T>();
-        if (t == null)
-            throw new UnityException("No CarController found");
-        
-        return t;
-    }
-    public static T[] GetAllComponents<T>(GameObject carParent)
-    {
-        var ts = new List<T>();
-        ts.AddRange(carParent.GetComponents<T>());
-        ts.AddRange(carParent.GetComponentsInChildren<T>());
-        
-        return ts.ToArray();
     }
 }

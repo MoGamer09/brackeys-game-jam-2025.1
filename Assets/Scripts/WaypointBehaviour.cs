@@ -17,12 +17,14 @@ public class WaypointBehaviour : MonoBehaviour
     {
         if (_deactivated) return;
         
-        var carController = CarController.GetComponent<CarController>(other.gameObject);
+        var carController = other.gameObject.GetComponentInChildren<CarController>();
         if (!carController || !carController.IsDrivenByPlayer()) return;
         
         OnWaypointReached.Invoke();
         GetComponent<SpriteRenderer>().color = Color.green;
         _indicatorManager.HideIndicator();
         _deactivated = true;
+        
+        carController.KillPlayer();
     }
 }
