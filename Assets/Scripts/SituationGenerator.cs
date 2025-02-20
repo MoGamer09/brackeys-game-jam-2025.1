@@ -16,7 +16,7 @@ public class SituationGenerator : MonoBehaviour
     [SerializeField]
     private SituationData[] situations;
 
-    private uint _situationIndex;
+    private int _situationIndex;
 
     private void Awake()
     {
@@ -42,6 +42,7 @@ public class SituationGenerator : MonoBehaviour
         
         var car = situations[_situationIndex].car;
         car.SetActive(true);
+        car.GetComponentInChildren<CarController>().priority = _situationIndex;
         // var carController = car.GetComponent<CarController>();
         // var explosionTriggers = car.GetComponentsInChildren<ExplosionTrigger>();
         // foreach (var explosionTrigger in explosionTriggers)

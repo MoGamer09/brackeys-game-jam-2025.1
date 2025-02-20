@@ -5344,10 +5344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   situations:
-  - car: {fileID: 1439625876}
-    waypoint: {fileID: 2126707191}
   - car: {fileID: 363515981}
     waypoint: {fileID: 336862658}
+  - car: {fileID: 1439625876}
+    waypoint: {fileID: 2126707191}
   - car: {fileID: 936698756}
     waypoint: {fileID: 928191721}
   - car: {fileID: 1153750934}

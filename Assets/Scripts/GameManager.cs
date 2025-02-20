@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
         foreach (var car in _cars)
         {
             car.RemoveTireMarks();
+            car.ResetPath();
         }
         
         if (!activeCar) return; // first car

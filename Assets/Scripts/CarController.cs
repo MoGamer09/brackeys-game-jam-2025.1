@@ -22,9 +22,12 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private bool _playerIsAlive;
     private bool _followPath;
-    private RecordEntry[] _path;
-    private int _pathSize;
+    private RecordEntry[] _path = Array.Empty<RecordEntry>();
+    [HideInInspector]
+    public int pathSize;
     private bool _exploded;
+    [HideInInspector]
+    public int priority;
 
     private Func<int> PathIndex;
 
@@ -72,9 +75,10 @@ public class CarController : MonoBehaviour, IInputReceiver
     public void SetPath(RecordEntry[] path, Func<int> pathIndexCallback)
     {
         _path = path;
-        _pathSize = path.Length;
         _followPath = true;
         PathIndex = pathIndexCallback;
+        
+        ResetPath();
     }
 
     public bool IsDrivenByPlayer()
@@ -111,22 +115,30 @@ public class CarController : MonoBehaviour, IInputReceiver
         _rb.angularVelocity = 0.7f;
     }
 
-    public void Explode()
+    public void Explode(Collision2D other)
     {
-        if (_exploded || IsDrivenByPlayer())
+        if (_exploded
+        || IsDrivenByPlayer()
+        || other.gameObject.GetComponent<ExplosionTrigger>().GetCarController().priority < priority)
             return;
         
         _exploded = true;
         if (IsFollowingPath())
         {
-            _pathSize = PathIndex() + 1;
+            pathSize = PathIndex() + 1;
         }
     }
 
     private void DriveByPath()
     {
-        if (_pathSize == 0) return;
-        var pathIndex = Math.Min(PathIndex(), _pathSize - 1);
+        if (PathIndex() > pathSize)
+        {
+            _rb.linearDamping = 3.0f;
+            _rb.angularDamping = 3.0f;
+            return;
+        }
+        if (pathSize == 0) return;
+        var pathIndex = Math.Min(PathIndex(), pathSize - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
 
@@ -144,11 +156,16 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     public void RemoveTireMarks()
     {
-        Debug.Log("Removing Tire Marks");
         foreach (var tiremark in _tiremarks)
         {
             tiremark.Clear();
         }
+    }
+
+    public void ResetPath()
+    {
+        pathSize = _path.Length;
+        _exploded = false;
     }
 
     private void DriveByPlayer()

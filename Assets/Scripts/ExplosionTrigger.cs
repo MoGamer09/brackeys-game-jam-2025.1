@@ -17,11 +17,13 @@ public class ExplosionTrigger : MonoBehaviour
         _carController = GetComponent<CarController>() ?? transform.parent.GetComponentInChildren<CarController>();
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         var explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
         explosion.transform.localScale = Vector2.one * explosionScale;
 
-        _carController.Explode();
+        _carController.Explode(other);
     }
+    
+    public CarController GetCarController() => _carController;
 }
