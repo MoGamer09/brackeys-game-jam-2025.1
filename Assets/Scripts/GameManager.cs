@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private SituationGenerator _situationGenerator;
     private Recorder _recorder;
 
-    private uint _pathIndex;
+    private int _pathIndex;
     private bool _updatePathIndex;
     
     [SerializeField]
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     private void NextSituation()
     {
         var activeCar = ActiveCar();
-        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel, GameOver);
+        var nextCar = _situationGenerator.GenerateSituation(NextSituation, NextLevel);
         var oldPath = deepCopy(_recorder.StopRecording());
         _recorder.StartRecording(CarController.GetComponent<CarController>(nextCar));
         
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
-    private uint PathIndex()
+    private int PathIndex()
     {
         return _pathIndex;
     }

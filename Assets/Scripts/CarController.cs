@@ -23,8 +23,10 @@ public class CarController : MonoBehaviour, IInputReceiver
     private bool _playerIsAlive;
     private bool _followPath;
     private RecordEntry[] _path;
+    private int _pathSize;
+    private bool _exploded;
 
-    private Func<uint> PathIndex;
+    private Func<int> PathIndex;
 
     [SerializeField]
     private GameObject[] _adherents;
@@ -32,7 +34,11 @@ public class CarController : MonoBehaviour, IInputReceiver
     private IndicatorManager _indicatorManager;
     
     private List<TrailRenderer> _tiremarks = new List<TrailRenderer>();
-    
+
+    void Start()
+    {
+        _exploded = false;
+    }
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -63,9 +69,10 @@ public class CarController : MonoBehaviour, IInputReceiver
             DriveByPlayer();
     }
 
-    public void SetPath(RecordEntry[] path, Func<uint> pathIndexCallback)
+    public void SetPath(RecordEntry[] path, Func<int> pathIndexCallback)
     {
         _path = path;
+        _pathSize = path.Length;
         _followPath = true;
         PathIndex = pathIndexCallback;
     }
@@ -104,10 +111,22 @@ public class CarController : MonoBehaviour, IInputReceiver
         _rb.angularVelocity = 0.7f;
     }
 
+    public void Explode()
+    {
+        if (_exploded || IsDrivenByPlayer())
+            return;
+        
+        _exploded = true;
+        if (IsFollowingPath())
+        {
+            _pathSize = PathIndex() + 1;
+        }
+    }
+
     private void DriveByPath()
     {
-        if (_path.Length == 0) return;
-        var pathIndex = Math.Min(PathIndex(), _path.Length - 1);
+        if (_pathSize == 0) return;
+        var pathIndex = Math.Min(PathIndex(), _pathSize - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
 

@@ -29,7 +29,7 @@ public class SituationGenerator : MonoBehaviour
         }
     }
 
-    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete, Action onFail)
+    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete)
     {
         if (_situationIndex >= situations.Length)
         {
@@ -42,9 +42,10 @@ public class SituationGenerator : MonoBehaviour
         
         var car = situations[_situationIndex].car;
         car.SetActive(true);
-        var explosionTriggers = CarController.GetAllComponents<ExplosionTrigger>(car);
-        foreach (var explosionTrigger in explosionTriggers)
-            explosionTrigger.OnFail = onFail;
+        // var carController = car.GetComponent<CarController>();
+        // var explosionTriggers = car.GetComponentsInChildren<ExplosionTrigger>();
+        // foreach (var explosionTrigger in explosionTriggers)
+        //     explosionTrigger.carController = carController;
 
         ++_situationIndex;
         return car;

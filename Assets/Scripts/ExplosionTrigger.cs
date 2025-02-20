@@ -8,15 +8,20 @@ public class ExplosionTrigger : MonoBehaviour
 
     [SerializeField]
     private float explosionScale = 2.0f;
+    
+    [SerializeField]
+    private CarController _carController;
 
-    [HideInInspector]
-    public Action OnFail;
+    private void Awake()
+    {
+        _carController = GetComponent<CarController>() ?? transform.parent.GetComponentInChildren<CarController>();
+    }
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
         explosion.transform.localScale = Vector2.one * explosionScale;
-        
-        OnFail?.Invoke();
+
+        _carController.Explode();
     }
 }
