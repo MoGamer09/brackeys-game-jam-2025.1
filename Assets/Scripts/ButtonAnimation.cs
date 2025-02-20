@@ -10,14 +10,18 @@ public class ButtonAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         _text = GetComponentInChildren<TextMeshProUGUI>();
     }
+    private void OnEnable()
+    {
+        _text.transform.localScale = Vector3.one;
+    }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        _text.transform.localScale *= 1.2f;
+        _text.transform.localScale = Vector3.one * 1.2f;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        _text.transform.localScale /= 1.2f;
+        _text.transform.localScale = Vector3.one;
     }
 }
