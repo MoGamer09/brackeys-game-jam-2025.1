@@ -45,12 +45,12 @@ public class SituationGenerator : MonoBehaviour
         }
     }
 
-    public GameObject GenerateSituation(Action onFinished, Action onLevelComplete)
+    public (GameObject, OrderData?) GenerateSituation(Action onFinished, Action onLevelComplete)
     {
         if (_situationIndex >= situations.Length)
         {
             onLevelComplete?.Invoke();
-            return null;
+            return (null, null);
         }
         var waypoint = situations[_situationIndex].waypoint;
         waypoint.SetActive(true);
@@ -64,8 +64,10 @@ public class SituationGenerator : MonoBehaviour
         // foreach (var explosionTrigger in explosionTriggers)
         //     explosionTrigger.carController = carController;
 
+        var order = situations[_situationIndex].order;
+        
         ++_situationIndex;
-        return car;
+        return (car, order);
 
     }
 }

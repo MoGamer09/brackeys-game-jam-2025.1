@@ -14,25 +14,34 @@ public class GameManager : MonoBehaviour
 
     private int _pathIndex;
     private bool _updatePathIndex;
-    
-    [SerializeField]
-    private String nextScene;
-    
+    private bool _reverse;
+
+    [SerializeField] private String nextScene;
+
     private UIManager _uiManager;
-    
+
     private CarController[] _cars = Array.Empty<CarController>();
-    
+
     private bool _shouldJumpToNextSituation;
+
+    private OrderVisualizer _orderVisualizer;
+    private InputHandler _inputHandler;
     
+    private List<GameObject> _pathRenderers = new List<GameObject>();
+    public GameObject pathRendererPrefab;
+
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
-        
+
         _situationGenerator = GetComponent<SituationGenerator>();
         _recorder = GetComponent<Recorder>();
         _uiManager = FindFirstObjectByType<UIManager>();
         _cars = FindObjectsByType<CarController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         _shouldJumpToNextSituation = false;
+        _orderVisualizer = FindFirstObjectByType<OrderVisualizer>();
+        _inputHandler = GetComponent<InputHandler>();
     }
 
     private void Start()
@@ -43,7 +52,16 @@ public class GameManager : MonoBehaviour
     private void FixedUpdate()
     {
         if (_updatePathIndex)
-            ++_pathIndex;
+        {
+            if (!_reverse)
+            {
+                ++_pathIndex;
+            }
+            else if (_pathIndex > 0)
+            {
+                --_pathIndex;
+            }
+        }
 
         if (_shouldJumpToNextSituation && AllCarsDone())
         {
@@ -55,24 +73,85 @@ public class GameManager : MonoBehaviour
     private void ActuallyLoadNextSituation()
     {
         var activeCar = ActiveCar();
-        var nextCar = _situationGenerator.GenerateSituation(QueryNextSituation, NextLevel);
-
-        if (!nextCar) return;
-        
-        var oldPath = deepCopy(_recorder.StopRecording());
-        _recorder.StartRecording(nextCar.GetComponentInChildren<CarController>());
-        
-        _pathIndex = 0;
-        _updatePathIndex = true;
-
-        foreach (var car in _cars)
+        if (activeCar != null)
         {
-            car.RemoveTireMarks();
-            car.ResetPath();
+            activeCar.GetComponentInChildren<CarController>().playerControlled = false; //Stop player driving
+        }
+
+        var situation = _situationGenerator.GenerateSituation(QueryNextSituation, NextLevel);
+        var nextCar = situation.Item1;
+
+        if (!nextCar) return; //Was last car
+
+        var oldPath = deepCopy(_recorder.StopRecording()); //Stop recording
+
+        if (activeCar) //not first car
+            activeCar.SetPath(oldPath, PathIndex);
+
+        /*
+         nextCar.SetActive(false);
+        _reverse = true; //reverse time
+        _updatePathIndex = true; // Stop time
+        */
+
+        _updatePathIndex = false;
+
+        _orderVisualizer.ShowOrder(situation.Item2 ?? new OrderData(), () =>
+        {
+            //Finish grace period
+            foreach (var car in _cars)
+            {
+                car.RemoveTireMarks();
+                car.ResetPath();
+            }
+
+            _pathIndex = 0; //Reset Time
+            _reverse = false;
+            nextCar.SetActive(true);
+            nextCar.GetComponentInChildren<CarController>().playerControlled = true; //Start player driving
+
+            var startGame = new Action(() =>
+            {
+                HideCarPaths();
+                _recorder.StartRecording(nextCar.GetComponentInChildren<CarController>());
+                _updatePathIndex = true; //Start time again
+                _inputHandler.OnInputMade = () => { };
+            });
+
+            //Wait for player input to start
+
+            ShowCarPaths();
+            
+            _inputHandler.OnInputMade = startGame;
+            
+            //Time between accepted contract and start
+        });
+
+
+        //This is the grace period.
+    }
+
+    private void HideCarPaths()
+    {
+        foreach (var pathRenderer in _pathRenderers)
+        {
+            Destroy(pathRenderer);
         }
         
-        if (!activeCar) return; // first car
-        activeCar.SetPath(oldPath, PathIndex);
+        _pathRenderers.Clear();
+    }
+
+    private void ShowCarPaths()
+    {
+        foreach (var carController in _cars)
+        {
+            var newPath = Instantiate(pathRendererPrefab);
+            var lr = newPath.GetComponent<LineRenderer>();
+            var path = carController.GetPath();
+            lr.positionCount = carController.GetPathSize();
+            lr.SetPositions(path.Select(p => (Vector3)p.position).ToList<Vector3>().GetRange(0, lr.positionCount).ToArray());
+            _pathRenderers.Add(newPath);
+        }
     }
 
     private void NextLevel()
