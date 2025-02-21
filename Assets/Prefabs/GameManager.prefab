@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: SampleScene
+  pathRendererPrefab: {fileID: 1590898548631443694, guid: 7141de34f77703b42a9f488182b765d2, type: 3}
 --- !u!114 &6354545710510999758
 MonoBehaviour:
   m_ObjectHideFlags: 0

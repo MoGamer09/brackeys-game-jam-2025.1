@@ -22,6 +22,7 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private bool _playerIsAlive;
     private bool _followPath;
+    public bool playerControlled = false;
     private RecordEntry[] _path = Array.Empty<RecordEntry>();
     private int _pathSize;
     private bool _exploded;
@@ -55,6 +56,16 @@ public class CarController : MonoBehaviour, IInputReceiver
         }
     }
 
+    public RecordEntry[] GetPath()
+    {
+        return _path;
+    }
+
+    public int GetPathSize()
+    {
+        return _pathSize;
+    }
+
     public void UpdateInputs(Vector2 inputs)
     {
         _turnInput = inputs.x;
@@ -66,7 +77,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     {
         if (_followPath)
             DriveByPath();
-        else
+        else if(playerControlled)
             DriveByPlayer();
     }
 
@@ -117,7 +128,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     {
         if (_exploded
         || IsDrivenByPlayer()
-        || other.gameObject.GetComponent<ExplosionTrigger>().GetCarController().priority < priority)
+        || other.gameObject.GetComponent<ExplosionTrigger>()?.GetCarController().priority < priority)
             return;
         
         _exploded = true;

@@ -30,7 +30,7 @@ public class OrderVisualizer : MonoBehaviour
     {
         //Hide accapt
         LeanTween.scale(stamp, Vector3.one * 3, 0f);
-        LeanTween.color(stamp, Color.clear, 0f);
+        stamp.GetComponent<SpriteRenderer>().color = Color.clear;
         
         //Show panel
         LeanTween.moveLocal(gameObject, showPosition, 0.5f).setEase(LeanTweenType.easeInOutCubic);
@@ -45,6 +45,8 @@ public class OrderVisualizer : MonoBehaviour
         departureTimeTxt.text = "Departure Time: " + order.departureTime;
         priorityLevelTxt.text = "Priority Level: " + order.priorityLevel;
         paymentTxt.text = "Payment Upon Completion: " + order.payment;
+        
+        _onAccept = onAccept;
     }
 
     public void AcceptOrder()
