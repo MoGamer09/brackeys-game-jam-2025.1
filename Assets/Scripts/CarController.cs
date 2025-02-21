@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour, IInputReceiver
     public float turnSpeed = 3.5f;
     public float maxSpeed = 10.0f;
     public float minTurningSpeed = 0.5f;
+    public float reverseSpeedFactor = 0.25f;
 
     private float _accelerationInput = 0.0f;
     private float _turnInput = 0.0f;
@@ -216,7 +217,7 @@ public class CarController : MonoBehaviour, IInputReceiver
             return;
         
         //Limit backwards velocity
-        if(_velocityVsUp < -maxSpeed/4 && _accelerationInput < 0)
+        if(_velocityVsUp < -maxSpeed * reverseSpeedFactor && _accelerationInput < 0)
             return;
         
         //Limit sideways speed
