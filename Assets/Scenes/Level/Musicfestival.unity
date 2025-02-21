@@ -540,6 +540,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da29d08d450cb6948bf79aa781e2ed25, type: 3}
+--- !u!1 &117988324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6440974446831279313, guid: 2f3779245d5d8a14b829d8c869dfff72, type: 3}
+  m_PrefabInstance: {fileID: 103371819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &124864505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8713,7 +8718,7 @@ PrefabInstance:
     - target: {fileID: 6354545710510999758, guid: f4dcd628c48065c45b829a80b7f634ca, type: 3}
       propertyPath: situations.Array.data[3].car
       value: 
-      objectReference: {fileID: 1224703989}
+      objectReference: {fileID: 117988324}
     - target: {fileID: 6354545710510999758, guid: f4dcd628c48065c45b829a80b7f634ca, type: 3}
       propertyPath: situations.Array.data[4].car
       value: 
