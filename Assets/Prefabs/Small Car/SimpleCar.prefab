@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  fireTrailEffect: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
   explosionScale: 2
   _carController: {fileID: 0}
 --- !u!1001 &3222941132208668255

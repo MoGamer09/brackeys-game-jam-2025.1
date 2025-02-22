@@ -125,6 +125,9 @@ public class GameManager : MonoBehaviour
             _inputHandler.OnInputMade = startGame;
             
             //Time between accepted contract and start
+            var fireTrails = GameObject.FindGameObjectsWithTag("Fire Trail");
+            foreach (var fireTrail in fireTrails)
+                Destroy(fireTrail);
         });
 
 

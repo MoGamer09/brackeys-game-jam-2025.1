@@ -192,7 +192,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  fireTrailEffect: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!1 &3672715291799903472
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +341,10 @@ MonoBehaviour:
   accelerationSpeed: 30
   turnSpeed: 1
   maxSpeed: 10
-  minTurningSpeed: 0.5
+  reverseSpeedFactor: 0.25
+  dampingFactor: 3
+  playerControlled: 0
+  priority: 0
   _adherents:
   - {fileID: 3656083025995164786}
 --- !u!50 &379659670879643315
@@ -385,7 +390,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.51}
-  m_ConnectedAnchor: {x: -4.4190784, y: 3.1945539}
+  m_ConnectedAnchor: {x: -0.00000019430543, y: 2.7745526}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -467,7 +472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  fireTrailEffect: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!1001 &2368057070975752159
 PrefabInstance:
   m_ObjectHideFlags: 0
