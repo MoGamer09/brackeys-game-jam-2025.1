@@ -1,10 +1,14 @@
 using System;
+using UnityEditor.Searcher;
 using UnityEngine;
 
 public class WaypointBehaviour : MonoBehaviour
 {
-    public Action OnWaypointReached;
+    private Action _onWaypointReached;
+    private WaypointBehaviour _nextWaypoint;
+
     private bool _deactivated = false;
+    private bool _canBeReached = false;
     private IndicatorManager _indicatorManager;
 
     private void Awake()
@@ -13,18 +17,45 @@ public class WaypointBehaviour : MonoBehaviour
         _deactivated = false;
         _indicatorManager.ShowIndicator();
     }
-    private void OnTriggerEnter2D(Collider2D other)
+
+    public void Init(Action onFinalWaypointReached, GameObject[] nextWaypoints)
     {
-        if (_deactivated) return;
+        _canBeReached = true;
+        
+        if (nextWaypoints.Length == 0) return;
+        var waypoint = this;
+        for (var i = 1; i < nextWaypoints.Length; i++)
+        {
+            waypoint._onWaypointReached = () => {};
+            
+            waypoint._nextWaypoint = nextWaypoints[i].GetComponent<WaypointBehaviour>();
+            waypoint = waypoint._nextWaypoint;
+        }
+        waypoint._onWaypointReached = onFinalWaypointReached;
+    }
+
+private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (_deactivated || !_canBeReached) return;
         
         var carController = other.gameObject.GetComponentInChildren<CarController>();
         if (!carController || !carController.IsDrivenByPlayer()) return;
         
-        OnWaypointReached.Invoke();
+        _onWaypointReached.Invoke();
         GetComponent<SpriteRenderer>().color = Color.green;
         _indicatorManager.HideIndicator();
         _deactivated = true;
-        
-        carController.KillPlayer();
+
+        if (_nextWaypoint != null)
+        {
+            _nextWaypoint._deactivated = false;
+            _nextWaypoint._canBeReached = true;
+            _nextWaypoint.gameObject.SetActive(true);
+        }
+        else
+        {
+            print("player killed");
+            carController.KillPlayer();
+        }
     }
 }

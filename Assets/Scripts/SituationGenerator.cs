@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public struct SituationData
 {
     public GameObject car;
-    public GameObject waypoint;
+    public GameObject[] waypoints;
     public OrderData order;
 }
 
@@ -41,7 +41,8 @@ public class SituationGenerator : MonoBehaviour
         for (var i = 0; i < situations.Length; i++)
         {
             situations[i].car.SetActive(false);
-            situations[i].waypoint.SetActive(false);
+            foreach (var waypoint in situations[i].waypoints)
+                waypoint.SetActive(false);
         }
     }
 
@@ -52,9 +53,9 @@ public class SituationGenerator : MonoBehaviour
             onLevelComplete?.Invoke();
             return (null, null);
         }
-        var waypoint = situations[_situationIndex].waypoint;
-        waypoint.SetActive(true);
-        waypoint.GetComponent<WaypointBehaviour>().OnWaypointReached = onFinished;
+        var waypoints = situations[_situationIndex].waypoints;
+        waypoints[0].SetActive(true);
+        waypoints[0].GetComponent<WaypointBehaviour>().Init(onFinished, waypoints);
         
         var car = situations[_situationIndex].car;
         car.SetActive(true);

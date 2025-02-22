@@ -124,13 +124,17 @@ public class CarController : MonoBehaviour, IInputReceiver
         _playerIsAlive = false;
         _rb.linearVelocity = Vector2.zero;
         _rb.angularVelocity = 0.0f;
+        
+        _rb.linearDamping = 3.0f;
+        _rb.angularDamping = 3.0f;
     }
 
     public void Explode(Collision2D other)
     {
         if (_exploded
         || IsDrivenByPlayer()
-        || other.gameObject.GetComponent<ExplosionTrigger>()?.GetCarController().priority < priority)
+        || other.gameObject.GetComponent<ExplosionTrigger>()?.GetCarController().priority < priority
+        || !other.gameObject.GetComponent<ExplosionTrigger>())
             return;
         
         _exploded = true;
