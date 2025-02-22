@@ -140,7 +140,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.65
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2899607410578731650, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -166,5 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  fireTrailEffect: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
   explosionScale: 2
   _carController: {fileID: 0}

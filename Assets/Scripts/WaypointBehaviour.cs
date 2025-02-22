@@ -54,7 +54,6 @@ private void OnTriggerEnter2D(Collider2D other)
         }
         else
         {
-            print("player killed");
             carController.KillPlayer();
         }
     }

@@ -194,7 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
+  fireTrailEffect: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!1001 &1373376962698895079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,6 +369,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180
       objectReference: {fileID: 0}
+    - target: {fileID: 1175624144608366209, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: fireTrailEffect
+      value: 
+      objectReference: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
+    - target: {fileID: 3340812136024582117, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
+      propertyPath: fireTrailEffect
+      value: 
+      objectReference: {fileID: 7566369010111316368, guid: 361aa79ffb16d2bb2b217386c1d3c32e, type: 3}
     - target: {fileID: 3462728920679172017, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
       propertyPath: _adherents.Array.size
       value: 2
@@ -434,7 +444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 0}
+  fireTrailEffect: {fileID: 0}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!4 &5121359923994920441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86571205702762239, guid: d0ea3f39cebb2f00aab40edc93fe4e13, type: 3}
@@ -484,7 +496,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 0}
+  fireTrailEffect: {fileID: 0}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!1001 &6961228503895085795
 PrefabInstance:
   m_ObjectHideFlags: 0
