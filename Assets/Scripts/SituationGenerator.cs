@@ -29,8 +29,7 @@ public struct OrderData
 
 public class SituationGenerator : MonoBehaviour
 {
-    [SerializeField]
-    private SituationData[] situations;
+    public SituationData[] situations;
 
     private int _situationIndex;
 

@@ -1,34 +1,40 @@
 fileFormatVersion: 2
-guid: c2926e60432af5841abf5d0be8ce3ebe
+guid: ed4a5991d19967847b2602dd54ac7f15
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7026815929691679742
-    second: OrderAccaptStamp_0
+      213: -6028572584151122786
+    second: OrderCompletedStamp_0
   - first:
-      213: -7012744644882014177
-    second: OrderAccaptStamp_1
+      213: -3758584395518807099
+    second: OrderCompletedStamp_1
   - first:
-      213: -3863557155771085592
-    second: OrderAccaptStamp_2
+      213: -757410008844659958
+    second: OrderCompletedStamp_2
   - first:
-      213: -373025760399934754
-    second: OrderAccaptStamp_3
+      213: -2878882123847359360
+    second: OrderCompletedStamp_3
   - first:
-      213: 2809406795289357655
-    second: OrderAccaptStamp_4
+      213: -2490274691251164598
+    second: OrderCompletedStamp_4
   - first:
-      213: 1286636324376402218
-    second: OrderAccaptStamp_5
+      213: 1972936247980246114
+    second: OrderCompletedStamp_5
   - first:
-      213: 4094011386964904668
-    second: OrderAccaptStamp_6
+      213: 2644025507406640537
+    second: OrderCompletedStamp_6
   - first:
-      213: 8051676333517465913
-    second: OrderAccaptStamp_7
+      213: -139751847304856846
+    second: OrderCompletedStamp_7
   - first:
-      213: -371477375020760015
-    second: OrderAccaptStamp_8
+      213: 1712935724546808473
+    second: OrderCompletedStamp_8
+  - first:
+      213: -2539547539967640386
+    second: OrderCompletedStamp_9
+  - first:
+      213: 6720661690004102094
+    second: OrderCompletedStamp_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 140
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -150,199 +156,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OrderAccaptStamp_0
+      name: OrderCompletedStamp_0
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 317
+        width: 484
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c730bec25365ca0800000000000000
+      internalID: -6028572584151122786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_1
       rect:
         serializedVersion: 2
         x: 0
+        y: 191
+        width: 75
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c376c6f763d6dbc0800000000000000
+      internalID: -3758584395518807099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 189
+        width: 84
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a031d712c932d75f0800000000000000
+      internalID: -757410008844659958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_3
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 192
+        width: 95
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0842bd916f72c08d0800000000000000
+      internalID: -2878882123847359360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 191
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a24d2cc54c07dd0800000000000000
+      internalID: -2490274691251164598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_5
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 191
+        width: 87
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264ca518017416b10800000000000000
+      internalID: 1972936247980246114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_6
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 191
+        width: 87
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9957b0ab03771b420800000000000000
+      internalID: 2644025507406640537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_7
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 193
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa70b07f608f0ef0800000000000000
+      internalID: -139751847304856846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_8
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 191
+        width: 87
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a50b847f195c710800000000000000
+      internalID: 1712935724546808473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_9
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 191
+        width: 84
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcf20ea7f6b1ccd0800000000000000
+      internalID: -2539547539967640386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCompletedStamp_10
+      rect:
+        serializedVersion: 2
+        x: 178
         y: 0
-        width: 430
-        height: 300
+        width: 474
+        height: 166
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efb245fbbd3448160800000000000000
-      internalID: 7026815929691679742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 45
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f10e84d86e9bdae90800000000000000
-      internalID: -7012744644882014177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_2
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 46
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ec88d0ac33e16ac0800000000000000
-      internalID: -3863557155771085592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_3
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 46
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edaba4b1c0fb2daf0800000000000000
-      internalID: -373025760399934754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_4
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 45
-        width: 43
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75d6ace68940df620800000000000000
-      internalID: 2809406795289357655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_5
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 46
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a29d19d8bec0bd110800000000000000
-      internalID: 1286636324376402218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_6
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 45
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cda827a5aa9d0d830800000000000000
-      internalID: 4094011386964904668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_7
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 45
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9396ab937fc4dbf60800000000000000
-      internalID: 8051676333517465913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_8
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 0
-        width: 118
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1340bcbab4f38daf0800000000000000
-      internalID: -371477375020760015
+      spriteID: ecb55401336944d50800000000000000
+      internalID: 6720661690004102094
       vertices: []
       indices: 
       edges: []
@@ -351,7 +401,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b2c73889181dae043b075cfabf5cf2d5
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -361,15 +411,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OrderAccaptStamp_0: 7026815929691679742
-      OrderAccaptStamp_1: -7012744644882014177
-      OrderAccaptStamp_2: -3863557155771085592
-      OrderAccaptStamp_3: -373025760399934754
-      OrderAccaptStamp_4: 2809406795289357655
-      OrderAccaptStamp_5: 1286636324376402218
-      OrderAccaptStamp_6: 4094011386964904668
-      OrderAccaptStamp_7: 8051676333517465913
-      OrderAccaptStamp_8: -371477375020760015
+      OrderCompletedStamp_0: -6028572584151122786
+      OrderCompletedStamp_1: -3758584395518807099
+      OrderCompletedStamp_10: 6720661690004102094
+      OrderCompletedStamp_2: -757410008844659958
+      OrderCompletedStamp_3: -2878882123847359360
+      OrderCompletedStamp_4: -2490274691251164598
+      OrderCompletedStamp_5: 1972936247980246114
+      OrderCompletedStamp_6: 2644025507406640537
+      OrderCompletedStamp_7: -139751847304856846
+      OrderCompletedStamp_8: 1712935724546808473
+      OrderCompletedStamp_9: -2539547539967640386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

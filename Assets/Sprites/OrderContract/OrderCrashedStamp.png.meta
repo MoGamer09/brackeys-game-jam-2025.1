@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: c2926e60432af5841abf5d0be8ce3ebe
+guid: 25b3557f41c5d2441a37520aa1eddd50
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7026815929691679742
-    second: OrderAccaptStamp_0
+      213: 5453720186232907881
+    second: OrderCrashedStamp_0
   - first:
-      213: -7012744644882014177
-    second: OrderAccaptStamp_1
+      213: -7808822474985233688
+    second: OrderCrashedStamp_1
   - first:
-      213: -3863557155771085592
-    second: OrderAccaptStamp_2
+      213: -8489834131548470029
+    second: OrderCrashedStamp_2
   - first:
-      213: -373025760399934754
-    second: OrderAccaptStamp_3
+      213: 1857472988195615909
+    second: OrderCrashedStamp_3
   - first:
-      213: 2809406795289357655
-    second: OrderAccaptStamp_4
+      213: -9185092079452845923
+    second: OrderCrashedStamp_4
   - first:
-      213: 1286636324376402218
-    second: OrderAccaptStamp_5
+      213: -5488579513098838260
+    second: OrderCrashedStamp_5
   - first:
-      213: 4094011386964904668
-    second: OrderAccaptStamp_6
+      213: -6187033070388514373
+    second: OrderCrashedStamp_6
   - first:
-      213: 8051676333517465913
-    second: OrderAccaptStamp_7
+      213: 2055329487874746018
+    second: OrderCrashedStamp_7
   - first:
-      213: -371477375020760015
-    second: OrderAccaptStamp_8
+      213: -2046144020168563488
+    second: OrderCrashedStamp_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 140
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -150,199 +150,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OrderAccaptStamp_0
+      name: OrderCrashedStamp_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 229
+        width: 350
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9682ac44d918fab40800000000000000
+      internalID: 5453720186232907881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCrashedStamp_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 430
-        height: 300
+        y: 138
+        width: 55
+        height: 81
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efb245fbbd3448160800000000000000
-      internalID: 7026815929691679742
+      spriteID: 8e22b68f45d71a390800000000000000
+      internalID: -7808822474985233688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OrderAccaptStamp_1
+      name: OrderCrashedStamp_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 45
-        width: 22
-        height: 30
+        x: 59
+        y: 138
+        width: 70
+        height: 81
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f10e84d86e9bdae90800000000000000
-      internalID: -7012744644882014177
+      spriteID: 3f40113a6dc0e2a80800000000000000
+      internalID: -8489834131548470029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OrderAccaptStamp_2
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 46
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ec88d0ac33e16ac0800000000000000
-      internalID: -3863557155771085592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_3
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 46
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edaba4b1c0fb2daf0800000000000000
-      internalID: -373025760399934754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_4
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 45
-        width: 43
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75d6ace68940df620800000000000000
-      internalID: 2809406795289357655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_5
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 46
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a29d19d8bec0bd110800000000000000
-      internalID: 1286636324376402218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrderAccaptStamp_6
+      name: OrderCrashedStamp_3
       rect:
         serializedVersion: 2
         x: 127
-        y: 45
-        width: 23
-        height: 30
+        y: 137
+        width: 63
+        height: 82
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cda827a5aa9d0d830800000000000000
-      internalID: 4094011386964904668
+      spriteID: 5a4784967d117c910800000000000000
+      internalID: 1857472988195615909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OrderAccaptStamp_7
+      name: OrderCrashedStamp_4
       rect:
         serializedVersion: 2
-        x: 150
-        y: 45
-        width: 22
-        height: 30
+        x: 193
+        y: 138
+        width: 57
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9396ab937fc4dbf60800000000000000
-      internalID: 8051676333517465913
+      spriteID: d9885fe1b6ff78080800000000000000
+      internalID: -9185092079452845923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OrderAccaptStamp_8
+      name: OrderCrashedStamp_5
       rect:
         serializedVersion: 2
-        x: 27
+        x: 256
+        y: 137
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fd1483306a4d3b0800000000000000
+      internalID: -5488579513098838260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCrashedStamp_6
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 137
+        width: 63
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1f5e9e33e332aa0800000000000000
+      internalID: -6187033070388514373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCrashedStamp_7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 137
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6e825974ff58c10800000000000000
+      internalID: 2055329487874746018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderCrashedStamp_8
+      rect:
+        serializedVersion: 2
+        x: 52
         y: 0
-        width: 118
-        height: 42
+        width: 343
+        height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1340bcbab4f38daf0800000000000000
-      internalID: -371477375020760015
+      spriteID: 0e42096cad2aa93e0800000000000000
+      internalID: -2046144020168563488
       vertices: []
       indices: 
       edges: []
@@ -351,7 +351,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b2c73889181dae043b075cfabf5cf2d5
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -361,15 +361,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OrderAccaptStamp_0: 7026815929691679742
-      OrderAccaptStamp_1: -7012744644882014177
-      OrderAccaptStamp_2: -3863557155771085592
-      OrderAccaptStamp_3: -373025760399934754
-      OrderAccaptStamp_4: 2809406795289357655
-      OrderAccaptStamp_5: 1286636324376402218
-      OrderAccaptStamp_6: 4094011386964904668
-      OrderAccaptStamp_7: 8051676333517465913
-      OrderAccaptStamp_8: -371477375020760015
+      OrderCrashedStamp_0: 5453720186232907881
+      OrderCrashedStamp_1: -7808822474985233688
+      OrderCrashedStamp_2: -8489834131548470029
+      OrderCrashedStamp_3: 1857472988195615909
+      OrderCrashedStamp_4: -9185092079452845923
+      OrderCrashedStamp_5: -5488579513098838260
+      OrderCrashedStamp_6: -6187033070388514373
+      OrderCrashedStamp_7: 2055329487874746018
+      OrderCrashedStamp_8: -2046144020168563488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

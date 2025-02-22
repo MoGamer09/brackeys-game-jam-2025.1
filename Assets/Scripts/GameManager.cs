@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     
     private List<GameObject> _pathRenderers = new List<GameObject>();
     public GameObject pathRendererPrefab;
+    
+    private EndScreenManager _endScreenManager;
+    private ScreenTinter _screenTinter;
 
 
     private void Awake()
@@ -42,6 +45,8 @@ public class GameManager : MonoBehaviour
         _shouldJumpToNextSituation = false;
         _orderVisualizer = FindFirstObjectByType<OrderVisualizer>();
         _inputHandler = GetComponent<InputHandler>();
+        _endScreenManager = GetComponent<EndScreenManager>();
+        _screenTinter = GetComponentInChildren<ScreenTinter>();
     }
 
     private void Start()
@@ -95,6 +100,8 @@ public class GameManager : MonoBehaviour
         */
 
         _updatePathIndex = false;
+        
+        _screenTinter.SetScreenTint(true);
 
         _orderVisualizer.ShowOrder(situation.Item2 ?? new OrderData(), () =>
         {
@@ -119,6 +126,7 @@ public class GameManager : MonoBehaviour
             });
 
             //Wait for player input to start
+            _screenTinter.SetScreenTint(false);
 
             ShowCarPaths();
             
@@ -159,8 +167,7 @@ public class GameManager : MonoBehaviour
 
     private void NextLevel()
     {
-        print("next level");
-        // SceneManager.LoadScene(nextScene);
+        _endScreenManager.ShowEndScreen();
     }
 
     private void QueryNextSituation()
