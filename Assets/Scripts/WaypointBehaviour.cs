@@ -10,12 +10,36 @@ public class WaypointBehaviour : MonoBehaviour
     private bool _deactivated = false;
     private bool _canBeReached = false;
     private IndicatorManager _indicatorManager;
+    private SpriteRenderer _spriteRenderer;
+
+    public Color finalWaypointColor;
+    public Color chainWaypointColor;
 
     private void Awake()
     {
         _indicatorManager = GetComponentInChildren<IndicatorManager>();
         _deactivated = false;
         _indicatorManager.ShowIndicator();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void OnEnable()
+    {
+        UpdateColor();
+    }
+
+    private void UpdateColor()
+    {
+        if (_nextWaypoint != null)
+        {
+            _spriteRenderer.color = chainWaypointColor;
+            _indicatorManager.color = chainWaypointColor;   
+        }
+        else
+        {
+            _spriteRenderer.color = finalWaypointColor;
+            _indicatorManager.color = finalWaypointColor;
+        }
     }
 
     public void Init(Action onFinalWaypointReached, GameObject[] nextWaypoints)
@@ -31,6 +55,7 @@ public class WaypointBehaviour : MonoBehaviour
             waypoint._nextWaypoint = nextWaypoints[i].GetComponent<WaypointBehaviour>();
             waypoint = waypoint._nextWaypoint;
         }
+        UpdateColor();
         waypoint._onWaypointReached = onFinalWaypointReached;
     }
 
@@ -42,7 +67,14 @@ private void OnTriggerEnter2D(Collider2D other)
         if (!carController || !carController.IsDrivenByPlayer()) return;
         
         _onWaypointReached.Invoke();
-        GetComponent<SpriteRenderer>().color = Color.green;
+        if (_nextWaypoint == null)
+        {
+            _spriteRenderer.color = Color.grey;   
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
         _indicatorManager.HideIndicator();
         _deactivated = true;
 
