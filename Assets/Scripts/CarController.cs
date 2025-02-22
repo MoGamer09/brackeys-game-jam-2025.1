@@ -207,9 +207,9 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private void ApplySteering()
     {
-        if (_rb.linearVelocity.magnitude < minTurningSpeed)
-            return;
-        _rotationAngle -= Mathf.Sign(_turnInput) * Mathf.Log(Mathf.Abs(_turnInput) * 5.0f + 1.0f, 2) * turnSpeed;
+        // if (_rb.linearVelocity.magnitude < minTurningSpeed)
+            //return;
+        _rotationAngle -= Mathf.Sign(_turnInput) * Mathf.Log(Mathf.Abs(_turnInput) * 5.0f + 1.0f, 2) * turnSpeed * Mathf.Min(1.0f, _rb.linearVelocity.magnitude * 0.7f);
         _rb.MoveRotation(_rotationAngle);
     }
 
