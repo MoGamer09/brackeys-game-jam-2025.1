@@ -28,9 +28,33 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: turnSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: dampingFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: playerControlled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: accelerationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Name
       value: SimpleCar (Ambulance) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365912045490516394, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: driftFactor
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5440603933836765817, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Sprite
@@ -42,11 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6806064
+      value: 41.54656
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7172723
+      value: -12.860731
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071065
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -66,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071071
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -78,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8272193417825366005, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.x
