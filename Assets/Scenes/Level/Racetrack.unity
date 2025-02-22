@@ -1111,6 +1111,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 25871886}
     m_Modifications:
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: turnSpeed
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: accelerationSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Name
       value: SimpleCar
@@ -4071,6 +4083,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 299700869}
     m_Modifications:
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: maxSpeed
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Name
       value: SimpleCar (1)
@@ -4866,6 +4882,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1161176347}
     m_Modifications:
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: maxSpeed
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: turnSpeed
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: dampingFactor
+      value: 2.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: playerControlled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: accelerationSpeed
+      value: 55.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: reverseSpeedFactor
+      value: -0.37
+      objectReference: {fileID: 0}
     - target: {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Name
       value: SimpleCar
