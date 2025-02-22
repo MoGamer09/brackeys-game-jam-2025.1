@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(OrderTextPopulator))]
 public class OrderVisualizer : MonoBehaviour
 {
     private Action _onAccept;
@@ -10,20 +11,13 @@ public class OrderVisualizer : MonoBehaviour
     public Vector2 hidePosition;
     public GameObject stamp;
     public Button AcceptButton;
-        
-    public TMP_Text orderNumberTxt,
-        dateTxt,
-        contactTxt,
-        clientTxt,
-        descriptionTxt,
-        distanceTxt,
-        departureTimeTxt,
-        priorityLevelTxt,
-        paymentTxt;
+    
+    private OrderTextPopulator _orderTextPopulator;
 
     private void Start()
     {
         transform.position = hidePosition;
+        _orderTextPopulator = GetComponent<OrderTextPopulator>();
     }
 
     public void ShowOrder(OrderData order, Action onAccept)
@@ -36,15 +30,7 @@ public class OrderVisualizer : MonoBehaviour
         LeanTween.moveLocal(gameObject, showPosition, 0.5f).setEase(LeanTweenType.easeInOutCubic);
         AcceptButton.gameObject.SetActive(true);
         
-        orderNumberTxt.text = "Order No. " + order.orderNumber;
-        dateTxt.text = order.date;
-        contactTxt.text = "Contact Person: " + order.contactPerson;
-        clientTxt.text = "Client: " + order.client;
-        descriptionTxt.text = "Description: \n" + order.description;
-        distanceTxt.text = "Distance: " + order.distance + " km";
-        departureTimeTxt.text = "Departure Time: " + order.departureTime;
-        priorityLevelTxt.text = "Priority Level: " + order.priorityLevel;
-        paymentTxt.text = "Payment Upon Completion: " + order.payment;
+        _orderTextPopulator.UpdateOrderText(order);
         
         _onAccept = onAccept;
     }
