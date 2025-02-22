@@ -112,7 +112,10 @@ MonoBehaviour:
   accelerationSpeed: 50
   turnSpeed: 1
   maxSpeed: 12
-  minTurningSpeed: 0.5
+  reverseSpeedFactor: 0.25
+  dampingFactor: 3
+  playerControlled: 0
+  priority: 0
   _adherents: []
 --- !u!50 &8064356482070076376
 Rigidbody2D:
@@ -153,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f64adf3026afda7a5c6310ff15557e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  driftFactor: 0.24
+  driftFactor: 0.1
 --- !u!61 &1095713779260158841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -214,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
   explosionScale: 2
+  _carController: {fileID: 0}
 --- !u!1001 &3222941132208668255
 PrefabInstance:
   m_ObjectHideFlags: 0

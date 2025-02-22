@@ -10,7 +10,6 @@ public class CarController : MonoBehaviour, IInputReceiver
     public float accelerationSpeed = 30.0f;
     public float turnSpeed = 3.5f;
     public float maxSpeed = 10.0f;
-    public float minTurningSpeed = 0.5f;
     public float reverseSpeedFactor = 0.25f;
     public float dampingFactor = 3;
 
@@ -207,8 +206,6 @@ public class CarController : MonoBehaviour, IInputReceiver
 
     private void ApplySteering()
     {
-        // if (_rb.linearVelocity.magnitude < minTurningSpeed)
-            //return;
         _rotationAngle -=
             Mathf.Sign(_turnInput)
             * Mathf.Log(Mathf.Abs(_turnInput) * 5.0f + 1.0f, 2)

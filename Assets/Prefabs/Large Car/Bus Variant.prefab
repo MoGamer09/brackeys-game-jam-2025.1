@@ -24,6 +24,22 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 7.24
       objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: turnSpeed
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: dampingFactor
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: accelerationSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: reverseSpeedFactor
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3313559447622825053, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.88
@@ -70,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.39
+      value: -42.08
       objectReference: {fileID: 0}
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -151,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1642392090109666959, guid: 87603ef389a97744094549cbf5ccaf51, type: 3}
   explosionScale: 2
+  _carController: {fileID: 0}
