@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(OrderTextPopulator))]
 public class OrderVisualizer : MonoBehaviour
 {
     private Action _onAccept;
@@ -14,7 +13,7 @@ public class OrderVisualizer : MonoBehaviour
     
     private OrderTextPopulator _orderTextPopulator;
 
-    private void Start()
+    private void Awake()
     {
         transform.position = hidePosition;
         _orderTextPopulator = GetComponent<OrderTextPopulator>();
