@@ -139,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5cb62b75866add58087d938e4ce732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalWaypointColor: {r: 0.68741703, g: 0.9056604, b: 0.17515129, a: 1}
+  chainWaypointColor: {r: 0.91372555, g: 0.67058825, b: 0.21960786, a: 1}
 --- !u!50 &7532897579344992475
 Rigidbody2D:
   serializedVersion: 5
