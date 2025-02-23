@@ -9,6 +9,8 @@ public class SoundSliderBehaviour : MonoBehaviour
     
     private Slider _slider;
 
+    public string varName;
+
     private void Awake()
     {
         _slider = GetComponent<Slider>();
@@ -17,6 +19,6 @@ public class SoundSliderBehaviour : MonoBehaviour
 
     private void OnValueChange(float value)
     {
-        mixer.SetFloat("Volume", value);
+        mixer.SetFloat(varName, Mathf.Log10(value) * 20);
     }
 }

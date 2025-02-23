@@ -319,7 +319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e94c7064675f5eb29511167dacb1051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: a00adf58913c378d5a13e14a686408cd, type: 2}
+  mixer: {fileID: 24100000, guid: faa2309063807144c994fb2df3a7772f, type: 2}
+  varName: SoundEffectsVol
 --- !u!1001 &95988230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3544,6 +3545,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7629395629189959507, guid: 75df3232efe28194392520097ea6e773, type: 3}
   m_PrefabInstance: {fileID: 1381275687}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1405931011
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3991743107567082528, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409354445610588371, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9273f6416a7264b48978b0375795f6de, type: 3}
 --- !u!1 &1437800173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +4061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 1903188354107051806, guid: be28c55f780729140b0943c8f2e37599, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2860281206576464179, guid: be28c55f780729140b0943c8f2e37599, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.54
@@ -4451,6 +4513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 157716754}
     m_Modifications:
+    - target: {fileID: 516165195326871953, guid: 0048d46f059bb814eab3fde597336285, type: 3}
+      propertyPath: m_MinValue
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 986958473362564624, guid: 0048d46f059bb814eab3fde597336285, type: 3}
       propertyPath: m_Name
       value: MusicSlider
@@ -4585,7 +4651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e94c7064675f5eb29511167dacb1051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 1c77b2f91ea8406589d1fbb41b4e4e86, type: 2}
+  mixer: {fileID: 24100000, guid: faa2309063807144c994fb2df3a7772f, type: 2}
+  varName: MusicVol
 --- !u!1 &1877685171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,6 +5615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 157716754}
     m_Modifications:
+    - target: {fileID: 516165195326871953, guid: 0048d46f059bb814eab3fde597336285, type: 3}
+      propertyPath: m_MinValue
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 986958473362564624, guid: 0048d46f059bb814eab3fde597336285, type: 3}
       propertyPath: m_Name
       value: SoundSlider
@@ -5684,3 +5755,4 @@ SceneRoots:
   - {fileID: 1809655826}
   - {fileID: 1129004735}
   - {fileID: 1725804211}
+  - {fileID: 1405931011}
