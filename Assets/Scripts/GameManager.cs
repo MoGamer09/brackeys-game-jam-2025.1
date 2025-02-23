@@ -140,9 +140,12 @@ public class GameManager : MonoBehaviour
             _inputHandler.OnInputMade = startGame;
 
             //Time between accepted contract and start
-            var fireTrails = GameObject.FindGameObjectsWithTag("Fire Trail");
+            var fireTrails = GameObject.FindGameObjectsWithTag("Firetrail");
             foreach (var fireTrail in fireTrails)
-                Destroy(fireTrail);
+            {
+                print(fireTrail.name);
+                Destroy(fireTrail);   
+            }
         });
 
 
