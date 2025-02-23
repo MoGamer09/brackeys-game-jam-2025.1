@@ -29,6 +29,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: turnSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182346655544765953, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: minTurningSpeed
       value: 10000
       objectReference: {fileID: 0}
