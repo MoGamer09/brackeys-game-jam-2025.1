@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      playDouble_0: 3397534795869636860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] speedUpImages;
     [SerializeField] private GameObject speedButton;
 
+    public GameObject retryButton;
+
 
     private void Awake()
     {
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour
     {
         ActuallyLoadNextSituation();
         SetSpeed(1);
+        retryButton.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -76,6 +79,7 @@ public class GameManager : MonoBehaviour
     private void ActuallyLoadNextSituation()
     {
         speedButton.SetActive(false);
+        retryButton.SetActive(false);
         
         SetSpeed(1); //Set Speed to normal
 
@@ -125,6 +129,7 @@ public class GameManager : MonoBehaviour
                 _recorder.StartRecording(nextCar.GetComponentInChildren<CarController>());
                 _updatePathIndex = true; //Start time again
                 _inputHandler.OnInputMade = () => { };
+                retryButton.SetActive(true);
             });
 
             //Wait for player input to start
@@ -224,6 +229,11 @@ public class GameManager : MonoBehaviour
     private void NextLevel()
     {
         _endScreenManager.ShowEndScreen();
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void QueryNextSituation()
