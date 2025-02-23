@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EndScreenManager : MonoBehaviour
@@ -112,5 +113,11 @@ public class EndScreenManager : MonoBehaviour
                 seq.append(LeanTween.color(star.gameObject, Color.white, 0.5f).setEase(LeanTweenType.easeInOutCubic));
             }
         }
+
+        seq.append(3);
+        seq.append(() =>
+        {
+            SceneManager.LoadScene(0);
+        });
     }
 }
