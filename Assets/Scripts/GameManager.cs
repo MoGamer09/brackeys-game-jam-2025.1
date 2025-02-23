@@ -143,7 +143,6 @@ public class GameManager : MonoBehaviour
             var fireTrails = GameObject.FindGameObjectsWithTag("Firetrail");
             foreach (var fireTrail in fireTrails)
             {
-                print(fireTrail.name);
                 Destroy(fireTrail);   
             }
         });
