@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     private EndScreenManager _endScreenManager;
     private ScreenTinter _screenTinter;
+    private MusicManager _musicManager;
 
     private int _pathIndexDelta = 1;
 
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
         _inputHandler = GetComponent<InputHandler>();
         _endScreenManager = GetComponent<EndScreenManager>();
         _screenTinter = GetComponentInChildren<ScreenTinter>();
+        _musicManager = FindFirstObjectByType<MusicManager>();
     }
 
     private void Start()
@@ -130,6 +132,7 @@ public class GameManager : MonoBehaviour
                 _updatePathIndex = true; //Start time again
                 _inputHandler.OnInputMade = () => { };
                 retryButton.SetActive(true);
+                _musicManager?.AddMusicLayer();
             });
 
             //Wait for player input to start
