@@ -54,11 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 615544060a57411449686711cc46c45a, type: 3}
     - target: {fileID: 4009822808098993707, guid: fbc098425c42e7a468c74eea1a5d5124, type: 3}
       propertyPath: m_Size.x
-      value: 26.781363
+      value: 29.248306
       objectReference: {fileID: 0}
     - target: {fileID: 4009822808098993707, guid: fbc098425c42e7a468c74eea1a5d5124, type: 3}
       propertyPath: m_Size.y
-      value: 8.588605
+      value: 11.826468
       objectReference: {fileID: 0}
     - target: {fileID: 6140644004067089612, guid: fbc098425c42e7a468c74eea1a5d5124, type: 3}
       propertyPath: m_Size.x

@@ -90,6 +90,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3758668418009249028, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758668418009249028, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4048232503787577335, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
       propertyPath: m_Name
       value: SimpleCar (Large Plane) Variant
@@ -141,6 +149,14 @@ PrefabInstance:
     - target: {fileID: 6848108408900864339, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784768029835339626, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
+      propertyPath: m_Size.x
+      value: 19.393734
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784768029835339626, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
+      propertyPath: m_Size.y
+      value: 8.346597
       objectReference: {fileID: 0}
     - target: {fileID: 8314563022552469761, guid: 274ffed08a3cdfd45a825cdf90d0483b, type: 3}
       propertyPath: m_LocalPosition.y
