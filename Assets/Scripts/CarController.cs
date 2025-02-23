@@ -150,14 +150,14 @@ public class CarController : MonoBehaviour, IInputReceiver
     
     private void DriveByPath()
     {
-        if (PathIndex() > _pathSize)
+        if (PathIndex() >= _pathSize)
         {
             _rb.linearDamping = 3.0f;
             _rb.angularDamping = 3.0f;
             return;
         }
         if (_pathSize == 0) return;
-        var pathIndex = Math.Min(PathIndex(), _pathSize - 1);
+        var pathIndex = Math.Min(PathIndex(), _path.Length - 1);
         transform.position = _path[pathIndex].position;
         transform.rotation = _path[pathIndex].rotation;
 
