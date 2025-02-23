@@ -12,6 +12,8 @@ public class ExplosionTrigger : MonoBehaviour
     [SerializeField]
     private CarController _carController;
 
+    private bool _onFire = false;
+
     private void Awake()
     {
         _carController = GetComponent<CarController>() ?? transform.parent.GetComponentInChildren<CarController>();
@@ -24,6 +26,12 @@ public class ExplosionTrigger : MonoBehaviour
         else
             if (other.gameObject.GetComponent<ExplosionTrigger>()._carController.IsFollowingPath())
                 Instantiate(fireTrailEffect, other.transform);
+
+        if (!_onFire)
+        {
+            Instantiate(fireTrailEffect, transform.position, Quaternion.identity, transform);
+            _onFire = true;
+        }   
         
         var explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Destroy(explosion, 5.0f);
