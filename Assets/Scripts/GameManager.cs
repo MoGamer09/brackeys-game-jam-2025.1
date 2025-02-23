@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     private int _pathIndex;
     private bool _updatePathIndex;
-    private bool _reverse;
 
     [SerializeField] private String nextScene;
 
@@ -26,12 +25,17 @@ public class GameManager : MonoBehaviour
 
     private OrderVisualizer _orderVisualizer;
     private InputHandler _inputHandler;
-    
+
     private List<GameObject> _pathRenderers = new List<GameObject>();
     public GameObject pathRendererPrefab;
-    
+
     private EndScreenManager _endScreenManager;
     private ScreenTinter _screenTinter;
+
+    private int _pathIndexDelta = 1;
+
+    [SerializeField] private GameObject[] speedUpImages;
+    [SerializeField] private GameObject speedButton;
 
 
     private void Awake()
@@ -52,20 +56,14 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ActuallyLoadNextSituation();
+        SetSpeed(1);
     }
 
     private void FixedUpdate()
     {
         if (_updatePathIndex)
         {
-            if (!_reverse)
-            {
-                ++_pathIndex;
-            }
-            else if (_pathIndex > 0)
-            {
-                --_pathIndex;
-            }
+            _pathIndex += _pathIndexDelta;
         }
 
         if (_shouldJumpToNextSituation && AllCarsDone())
@@ -77,6 +75,10 @@ public class GameManager : MonoBehaviour
 
     private void ActuallyLoadNextSituation()
     {
+        speedButton.SetActive(false);
+        
+        SetSpeed(1); //Set Speed to normal
+
         var activeCar = ActiveCar();
         if (activeCar != null)
         {
@@ -100,7 +102,7 @@ public class GameManager : MonoBehaviour
         */
 
         _updatePathIndex = false;
-        
+
         _screenTinter.SetScreenTint(true);
 
         _orderVisualizer.ShowOrder(situation.Item2 ?? new OrderData(), () =>
@@ -113,7 +115,7 @@ public class GameManager : MonoBehaviour
             }
 
             _pathIndex = 0; //Reset Time
-            _reverse = false;
+            _pathIndexDelta = 1; //Reset Speed
             nextCar.SetActive(true);
             nextCar.GetComponentInChildren<CarController>().playerControlled = true; //Start player driving
 
@@ -129,9 +131,9 @@ public class GameManager : MonoBehaviour
             _screenTinter.SetScreenTint(false);
 
             ShowCarPaths();
-            
+
             _inputHandler.OnInputMade = startGame;
-            
+
             //Time between accepted contract and start
             var fireTrails = GameObject.FindGameObjectsWithTag("Fire Trail");
             foreach (var fireTrail in fireTrails)
@@ -142,13 +144,66 @@ public class GameManager : MonoBehaviour
         //This is the grace period.
     }
 
+    private void SetSpeed(int speed)
+    {
+        switch (speed)
+        {
+            case 1:
+                for (var i = 0; i < speedUpImages.Length; i++)
+                {
+                    speedUpImages[i].SetActive(i == 0);   
+                }
+
+                _pathIndexDelta = 1;
+                break;
+            case 2:
+                for (var i = 0; i < speedUpImages.Length; i++)
+                {
+                    speedUpImages[i].SetActive(i == 1);   
+                }
+
+                _pathIndexDelta = 2;
+                break;
+            case 6:
+                for (var i = 0; i < speedUpImages.Length; i++)
+                {
+                    speedUpImages[i].SetActive(i == 2);   
+                }
+
+                _pathIndexDelta = 6;
+                break;
+            default:
+                SetSpeed(1);
+                break;
+        }
+    }
+
+    public void ChangeSpeed()
+    {
+        switch (_pathIndexDelta)
+        {
+            case 1:
+                SetSpeed(2);
+                break;
+            case 2:
+                SetSpeed(6);
+                break;
+            case 6:
+                SetSpeed(1);
+                break;
+            default:
+                SetSpeed(1);
+                break;
+        }
+    }
+
     private void HideCarPaths()
     {
         foreach (var pathRenderer in _pathRenderers)
         {
             Destroy(pathRenderer);
         }
-        
+
         _pathRenderers.Clear();
     }
 
@@ -160,7 +215,8 @@ public class GameManager : MonoBehaviour
             var lr = newPath.GetComponent<LineRenderer>();
             var path = carController.GetPath();
             lr.positionCount = carController.GetPathSize();
-            lr.SetPositions(path.Select(p => (Vector3)p.position).ToList<Vector3>().GetRange(0, lr.positionCount).ToArray());
+            lr.SetPositions(path.Select(p => (Vector3) p.position).ToList<Vector3>().GetRange(0, lr.positionCount)
+                .ToArray());
             _pathRenderers.Add(newPath);
         }
     }
@@ -172,6 +228,7 @@ public class GameManager : MonoBehaviour
 
     private void QueryNextSituation()
     {
+        speedButton.SetActive(true);
         _shouldJumpToNextSituation = true;
     }
 
