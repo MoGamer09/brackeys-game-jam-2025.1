@@ -477,11 +477,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1738634648540506213, guid: 27ee7522f6d342f4b83ddca10f39cd3f, type: 3}
       propertyPath: m_Size.x
-      value: 6.1075535
+      value: 7.4302745
       objectReference: {fileID: 0}
     - target: {fileID: 1738634648540506213, guid: 27ee7522f6d342f4b83ddca10f39cd3f, type: 3}
       propertyPath: m_Size.y
-      value: 3.6689398
+      value: 4.878284
       objectReference: {fileID: 0}
     - target: {fileID: 1738634648540506213, guid: 27ee7522f6d342f4b83ddca10f39cd3f, type: 3}
       propertyPath: m_SortingOrder

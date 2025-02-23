@@ -36,6 +36,14 @@ PrefabInstance:
       propertyPath: accelerationSpeed
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 3856917546262531056, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856917546262531056, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4143814212904968451, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_Name
       value: SimpleCar (Police) Variant
@@ -87,6 +95,14 @@ PrefabInstance:
     - target: {fileID: 6820315988341192615, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901269050909497758, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: m_Size.x
+      value: 9.049548
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901269050909497758, guid: b5b3b5464db312b85a716c4a7c29454c, type: 3}
+      propertyPath: m_Size.y
+      value: 5.890327
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
