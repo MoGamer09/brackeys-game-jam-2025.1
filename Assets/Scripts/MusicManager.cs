@@ -5,6 +5,12 @@ public class MusicManager : MonoBehaviour
 {
     public AudioSource[] loopSources;
     private int _currentLayer = 0;
+    private DateTime startTime;
+
+    private void Awake()
+    {
+        startTime = DateTime.Now;
+    }
 
     public void AddMusicLayer()
     {
@@ -13,8 +19,9 @@ public class MusicManager : MonoBehaviour
         loopSources[_currentLayer].mute = false;
         var clip = loopSources[_currentLayer].clip;
         var clipLength = (double)clip.samples / clip.frequency;
+        var elapsedTime = (DateTime.Now - startTime).TotalSeconds;
         
-        loopSources[_currentLayer].PlayScheduled( AudioSettings.dspTime +  (clipLength - AudioSettings.dspTime % clipLength));
+        loopSources[_currentLayer].PlayDelayed( (float) (clipLength - elapsedTime % clipLength));
         
         _currentLayer++;
     }

@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.Searcher;
 using UnityEngine;
 
 public class WaypointBehaviour : MonoBehaviour
