@@ -12,6 +12,7 @@ But all your rides happen at the same time. So you have to dodge your past self 
 ## Play Yourself
 
 You can find the game [here](https://mogamer09.itch.io/deja-vroom) on itch.io.
+[Here](https://itch.io/jam/brackeys-13/rate/3339536) is our final ranking. Out of 2,199 entries we placed 63th overall and 26th in innovation.
 
 ## Screenshots
 
